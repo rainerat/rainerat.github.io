@@ -15,6 +15,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
+  height: 44rem;
 }
 .left-cont {
   display: flex;
@@ -22,8 +23,8 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  width: 17rem;
-  height: 40rem;
+  width: 19rem;
+  height: 100%;
   padding: 1.8rem;
   border-radius: 25px;
   background: var(--bg-grey-1);
@@ -58,6 +59,45 @@ hr {
 .role-tag p {
   font-size: var(--fs-small);
 }
+.info-cont  {
+  /* border: 2px solid white; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.info {
+  /* border: 2px solid blue; */
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  align-items: center;
+  gap: 0.6rem;
+}
+.text p {
+  font-size: var(--fs-small);
+}
+.info-header {
+  color: var(--font-white-2);
+}
+.icon {
+  position: relative;
+  border-radius: 0.8rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(140deg, hsl(0, 0%, 42%), hsl(216, 18%, 16%));
+  z-index: 1;
+}
+.icon::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-black);
+  border-radius: inherit;
+  z-index: -1;
+}
+
 
 .center-cont {
 
