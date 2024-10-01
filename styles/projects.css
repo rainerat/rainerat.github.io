@@ -1,0 +1,42 @@
+.filters {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.filter-btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--font-white-1);
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-normal);
+  font-family: Poppins, sans-serif;
+  transition: color .3s ease;
+}
+
+.filter-btn:hover {
+  color: var(--font-white-2);
+}
+
+.filter-btn.active {
+  background-color: #ffcc00;
+}
+
+.project-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-img-cont {
+  height: 9rem;
+}
+
+.project-img-cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}

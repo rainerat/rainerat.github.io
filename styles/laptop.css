@@ -1,0 +1,15 @@
+@media screen and (max-width: 1300px) {
+  .inner-cont {
+    flex-direction: column;
+  }
+  .left-cont {
+    margin-top: 15rem;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .info-cont {
+    display: none;
+  }
+}

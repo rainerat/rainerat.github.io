@@ -6,6 +6,11 @@
   <title>Rainer Ariel Timothy - Personal Portfolio</title>
   <link rel="stylesheet" href="./styles/globals.css">
   <link rel="stylesheet" href="./styles/home-page.css">
+  <link rel="stylesheet" href="./styles/about-me.css">
+  <link rel="stylesheet" href="./styles/projects.css">
+  <link rel="stylesheet" href="./styles/laptop.css">
+  <link rel="stylesheet" href="./styles/tablet.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
 </head>
 <body>
   <div class="container">
@@ -17,7 +22,6 @@
             <img src="./assets/images/fotobinus.jpeg" alt="My Profile Picture">
           </div>
         </div>
-
         <div class="my-name">
           <h2>Rainer Ariel Timothy</h2>
         </div>
@@ -85,11 +89,15 @@
           </ul>
         </nav>
         <div id="content-container">
+
+          <!-- About -->
           <section id="about">
             <div class="about-cont">
-              <h1>About Me</h1>
-              <hr class="section-divider">
-              <div class="description">
+              <div class="section-header">
+                <h1>About Me</h1>
+                <hr>
+              </div>
+              <div class="section-1">
                 <p>
                   Hey! Thanks for visiting my portfolio. My name is Rainer Ariel Timothy,
                   and I am an Undergraduate Information Systems student at BINUS University
@@ -106,25 +114,109 @@
                   share your opinions with me.
                 </p>
               </div>
-              <div class="part-2">
+              <div class="section-2">
                 <h2>What I'm doing</h2>
-
+                <div class="cards">
+                  <div class="card">
+                    <div class="card-svg-cont">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m352-522 86-87-56-57-44 44-56-56 43-44-45-45-87 87 159 158Zm328 329 87-87-45-45-44 43-56-56 43-44-57-56-86 86 158 159Zm24-567 57 57-57-57ZM290-120H120v-170l175-175L80-680l200-200 216 216 151-152q12-12 27-18t31-6q16 0 31 6t27 18l53 54q12 12 18 27t6 31q0 16-6 30.5T816-647L665-495l215 215L680-80 465-295 290-120Zm-90-80h56l392-391-57-57-391 392v56Zm420-419-29-29 57 57-28-28Z"/></svg>
+                    </div>
+                    <div class="card-description-cont">
+                      <h3>User Interface Design</h3>
+                      <p>Making modern and high-quality user interface designs.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-svg-cont">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M80-160v-120h80v-440q0-33 23.5-56.5T240-800h600v80H240v440h240v120H80Zm520 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z"/></svg>
+                    </div>
+                    <div class="card-description-cont">
+                      <h3>Front-End Web Development</h3>
+                      <p>Lorem ipsum dolor sit amet. Bla bla bla bla bla</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-svg-cont">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-120v-80h80v-80H160q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v400q0 33-23.5 56.5T800-280H560v80h80v80H320ZM160-360h640v-400H160v400Zm0 0v-400 400Z"/></svg>
+                    </div>
+                    <div class="card-description-cont">
+                      <h3>Desktop Application Development</h3>
+                      <p>Using Java to make high-quality desktop applications for your business.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-svg-cont">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"/></svg>
+                    </div>
+                    <div class="card-description-cont">
+                      <h3>Database Design</h3>
+                      <p>Create, develop, and maintain efficient database.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
 
+          <!-- Projects -->
           <section id="projects">
             <div class="projects-cont">
-              <h1>Projects</h1>
-              <p>Your portfolio content...</p>
-            </div>
+              <div class="section-header">
+                <h1>Projects</h1>
+                <hr>
+              </div>
+              <div class="projects">
+                <div class="filters">
+                  <button class="filter-btn" data-filter="all">All</button>
+                  <button class="filter-btn" data-filter="desktop-application">Desktop Application</button>
+                  <button class="filter-btn" data-filter="user-interface-design">User Interface Design</button>
+                  <button class="filter-btn" data-filter="front-end-web-development">Front-End Web Development</button>
+                  <button class="filter-btn" data-filter="database-design">Database Design</button>
+                </div>
+                <div class="project-items">
+                  <!-- item -->
+                  <div class="project-item desktop-application">
+                    <div class="project-img-cont">
+                      <img src="assets/images/project-previews/musang-forum.png" alt="Musang Forum">
+                    </div>
+                    <p>Musang Forum</p>
+                    <p>Desktop Application</p>
+                  </div>
 
+                  <!-- item -->
+                  <div class="project-item desktop-application">
+                    <div class="project-img-cont">
+                      <img src="assets/images/project-previews/musang-forum.png" alt="Musang Forum">
+                    </div>
+                    <p>Musang Forum</p>
+                    <p>Desktop Application</p>
+                  </div>
+
+                  <!-- item -->
+                  <div class="project-item desktop-application">
+                    <div class="project-img-cont">
+                      <img src="assets/images/project-previews/musang-forum.png" alt="Musang Forum">
+                    </div>
+                    <p>Musang Forum</p>
+                    <p>Desktop Application</p>
+                  </div>
+
+                  <!-- item -->
+                  <div class="project-item user-interface-design">
+
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
 
+          <!-- Contact -->
           <section id="contact">
             <div class="contact-cont">
-              <h1>Contact</h1>
-              <p>Contact information...</p>
+              <div class="section-header">
+                <h1>Contact</h1>
+                <hr>
+              </div>
             </div>
           </section>
         </div>
