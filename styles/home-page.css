@@ -11,15 +11,12 @@ hr {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 .inner-cont {
   display: flex;
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
-
 }
 .left-cont {
   display: flex;
@@ -78,6 +75,10 @@ hr {
   flex-direction: column;
   gap: 1.6rem;
 }
+#email,
+#phone {
+  text-decoration: none;
+}
 .info {
   /* border: 2px solid blue; */
   display: grid;
@@ -113,12 +114,14 @@ hr {
 .info:hover .icon svg {
   fill: var(--accent-yellow);
 }
-
 .text p {
   font-size: var(--fs-small);
 }
 .info-header {
-  color: var(--font-white-2);
+  color: var(--font-white-3);
+}
+.text p:not(.info-header) {
+  color: var(--font-white-1);
 }
 
 /* Socials */
