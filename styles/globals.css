@@ -49,3 +49,25 @@ body {
   font-family: Poppins, sans-serif;
   color: var(--font-white-1);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bg-grey-1);
+  border: 1px solid var(--border-grey);
+  border-radius: 3rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
