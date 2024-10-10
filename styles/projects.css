@@ -21,7 +21,15 @@
 }
 
 .filter-btn.active {
-  background-color: #ffcc00;
+  color: var(--accent-yellow);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 .project-items {
@@ -30,13 +38,29 @@
   gap: 2rem;
 }
 
+.project-item {
+  opacity: 0;
+  height: 0;
+  position: absolute;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.project-item.active {
+  opacity: 1;
+  transform: scale(1);
+  position: static;
+  height: auto;
+}
+
 .project-item:hover {
   cursor: pointer;
 }
 
 .project-img-cont {
   position: relative;
-  height: 9rem;
+  height: 10rem;
   overflow: hidden;
   border-radius: 0.6rem;
 }
@@ -115,6 +139,11 @@
   background: rgba(242, 145, 17, 0.6);
 }
 
+.tech-tag.figma {
+  border: 0.063rem solid rgba(119, 74, 234, 1);
+  background: rgba(119, 74, 234, 0.6);
+}
+
 .project-description-cont h3 {
   font-size: var(--fs-normal);
   font-weight: var(--fw-normal);
@@ -124,4 +153,76 @@
   font-size: var(--fs-small);
   font-weight: var(--fw-normal);
   color: var(--font-white-3);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: var(--bg-black);
+  border-radius: 0.5rem;
+  width: 80vw;
+  max-width: 85rem;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-image-container {
+  width: 100%;
+  height: 11rem;
+  overflow: clip;
+}
+
+#modalImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9) blur(1px);
+}
+
+.modal-description-container {
+  padding: 2rem 8rem;
+}
+
+#modalTitle {
+  font-size: var(--fs-xxlarge);
+}
+
+#modal-divider {
+  margin: 1rem 0 1rem 0;
+  border: 1px solid var(--hr-grey);
+}
+
+#modalDescription {
+  font-size: var(--fs-medium);
+  margin-bottom: 2rem;
+}
+
+#modalLink {
+  background: var(--accent-yellow);
+  padding: 0.65rem 1rem;
+  border-radius: 0.438rem;
+  text-decoration: none;
+  color: var(--bg-black);
+  font-weight: var(--fw-semi-bold);
+  transition: filter 0.3s ease;
+}
+
+#modalLink:hover {
+  filter: brightness(0.8);
 }

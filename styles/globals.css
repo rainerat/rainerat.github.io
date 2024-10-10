@@ -15,6 +15,7 @@
   --fs-medium: 1.125rem;
   --fs-large: 1.5rem;
   --fs-xlarge: 1.875rem;
+  --fs-xxlarge: 3rem;
   --fw-lighter: 200;
   --fw-light: 300;
   --fw-normal: 400;
@@ -24,50 +25,55 @@
   --fw-bolder: 800;
   --gradient-gold: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
 }
+
 html {
   box-sizing: border-box;
   font-size: 100%;
+  scroll-behavior: smooth;
 }
+
 *, *::before, *::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
+
 h1 {
   font-size: var(--fs-xlarge);
 }
+
 h2 {
   font-size: var(--fs-large);
 }
+
 h3 {
   font-size: var(--fs-medium);
 }
+
 p {
   font-size: var(--fs-normal);
 }
+
 body {
   font-family: Poppins, sans-serif;
   color: var(--font-white-1);
 }
 
-/* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.6rem;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: var(--bg-black);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--bg-grey-1);
   border: 1px solid var(--border-grey);
   border-radius: 3rem;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
