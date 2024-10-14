@@ -35,16 +35,23 @@
 .project-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  row-gap: 1.3rem;
 }
 
 .project-item {
+  margin-right: -0.05rem;
+  margin-left: -0.05rem;
+  border-radius: 1rem;
+  padding: 0.6rem;
   opacity: 0;
   height: 0;
   position: absolute;
   overflow: hidden;
   transform: scale(0.8);
-  transition: all 0.3s ease;
+  transition:
+          transform 0.3s ease,
+          height 0.3s ease,
+          background 0.1s ease;
 }
 
 .project-item.active {
@@ -56,6 +63,17 @@
 
 .project-item:hover {
   cursor: pointer;
+  background: var(--highlight-grey);
+  transition: background 0.3s ease;
+}
+
+.project-item:hover .project-img-cont img {
+  transform: scale(1.2);
+  filter: blur(2px) brightness(0.6);
+}
+
+.project-item:hover .project-img-cont svg {
+  opacity: 0.9;
 }
 
 .project-img-cont {
@@ -89,20 +107,11 @@
   transition: opacity .3s ease;
 }
 
-.project-img-cont:hover img {
-  transform: scale(1.2);
-  filter: blur(2px) brightness(0.6);
-}
-
-.project-img-cont:hover svg {
-  opacity: 0.9;
-}
-
 .project-description-cont {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  padding: 0.65rem 0;
+  padding-top: 0.65rem;
 }
 
 .project-description-cont .tech-tags {
@@ -204,8 +213,11 @@
 }
 
 #modal-divider {
-  margin: 1rem 0 1rem 0;
-  border: 1px solid var(--hr-grey);
+  margin-top: 0.3rem;
+  margin-bottom: 0.7rem;
+  border: 0.188rem solid var(--accent-yellow);
+  width: 3rem;
+  border-radius: 10px;
 }
 
 #modalDescription {

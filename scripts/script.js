@@ -11,26 +11,6 @@ function showContent(sectionId) {
     activeLink.classList.add('active');
 }
 
-// function showContact() {
-//     const sidebar = document.querySelector('.sidebar');
-//     const sideContent = document.querySelector('.side-content');
-//     const showContactLink = document.querySelector('.show-contact-link');
-//
-//     const isVisible = sidebar.classList.contains('active');
-//
-//     if (isVisible) {
-//         showContactLink.textContent = 'Show Contact';
-//         sidebar.classList.remove('active');
-//         sideContent.classList.remove('active');
-//         showContactLink.classList.remove('active');
-//     } else {
-//         showContactLink.textContent = 'Hide Contact';
-//         sidebar.classList.add('active');
-//         sideContent.classList.add('active');
-//         showContactLink.classList.add('active');
-//     }
-// }
-
 function showContact() {
     const sidebar = document.querySelector('.sidebar');
     const showContactLink = document.querySelector('.show-contact-link');
