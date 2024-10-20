@@ -1,5 +1,6 @@
 @import url(about-me.css);
 @import url(projects.css);
+@import url(contact.css);
 
 body {
   background: var(--bg-black);
@@ -10,13 +11,14 @@ body {
   display: flex;
   gap: 1.5rem;
   justify-content: center;
-  align-items: center;
 }
 
 /**
  * SIDEBAR
  */
 .sidebar {
+  position: sticky;
+  top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,7 +194,7 @@ body {
   min-width: 60rem;
   width: 60rem;
   min-height: 48.397rem;
-  max-height: 48.397rem;
+  /*max-height: 48.397rem;*/
   padding: 1.8rem;
   border-radius: 1.625rem;
   background: var(--bg-grey-1);
@@ -266,10 +268,12 @@ body {
 @media screen and (max-width: 1300px) {
   .inner-cont {
     flex-direction: column;
+    align-items: center;
   }
 
   .sidebar {
     position: relative;
+    top: unset;
     flex-direction: column;
     padding: 1.8rem;
     min-height: 12.7rem;
@@ -372,6 +376,6 @@ body {
   }
 
   .project-items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }

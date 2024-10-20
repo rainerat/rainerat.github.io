@@ -1,0 +1,47 @@
+.contacts {
+  margin-top: 2rem;
+  border: 1px solid var(--border-grey);
+  border-radius: 0.7rem;
+  padding: 1.5rem 1rem;
+}
+
+.contacts > p {
+  color: var(--font-white-2);
+}
+
+.contact-info {
+  columns: 3;
+  padding: 2rem 4rem 0 4rem;
+  text-align: center;
+}
+
+.contact {
+  text-decoration: none;
+}
+
+.contact:hover {
+  cursor: pointer;
+}
+
+.contact:hover svg {
+  fill: var(--accent-yellow);
+}
+
+.contact-icon svg {
+  fill: var(--font-white-2);
+  transition: fill 0.3s ease;
+}
+
+.contact-type p {
+  color: var(--font-white-1);
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-bold);
+}
+
+.contact-text p {
+  font-size: var(--fs-small);
+  color: var(--font-white-2);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

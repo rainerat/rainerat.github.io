@@ -2,15 +2,15 @@
   font-weight: var(--fw-semi-bold);
 }
 
-.about-cont .section-1 p {
+.about-cont .about-desc p {
   margin-bottom: 12px;
 }
 
-.about-cont .section-1 p:last-child {
+.about-cont .about-desc p:last-child {
   margin-bottom: 0;
 }
 
-.about-cont .section-2 {
+.about-cont .about-sec {
   margin-top: 1rem;
 }
 
@@ -54,5 +54,52 @@
 
 .card-description-cont p {
   margin-top: 0.2rem;
+  color: var(--font-white-2);
+}
+
+/* What I Work With */
+.about-techs {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem 2rem;
+  flex-wrap: wrap;
+}
+
+.tech {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 9rem;
+  height: 10rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  background: linear-gradient(to right bottom, rgb(81, 81, 81) 0%, rgba(64, 64, 64, 0) 50%);
+  z-index: 1;
+}
+
+.tech::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: var(--bg-black);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.tech svg {
+  fill: var(--accent-yellow);
+}
+
+.tech.figma svg {
+  fill: none;
+}
+
+.tech span {
+  font-size: var(--fs-normal);
   color: var(--font-white-2);
 }

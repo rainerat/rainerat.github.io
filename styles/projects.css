@@ -34,7 +34,7 @@
 
 .project-items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 1.3rem;
 }
 
@@ -78,7 +78,7 @@
 
 .project-img-cont {
   position: relative;
-  height: 10rem;
+  height: 15rem;
   overflow: hidden;
   border-radius: 0.6rem;
 }
@@ -227,11 +227,11 @@
 
 #modalLink {
   background: var(--accent-yellow);
-  padding: 0.65rem 1rem;
+  padding: 0.45rem 1.4rem;
   border-radius: 0.438rem;
   text-decoration: none;
   color: var(--bg-black);
-  font-weight: var(--fw-semi-bold);
+  font-weight: var(--fw-medium);
   transition: filter 0.3s ease;
 }
 
