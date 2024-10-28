@@ -1,0 +1,47 @@
+[
+  {
+    "id": "musang-forum",
+    "link": "https://github.com/rainerat/musang-forum",
+    "longDescription": [
+      {
+        "heading": "What is Musang Forum?",
+        "content": "Musang Forum is a live chat desktop application that me and my friends made during summer break. In the app, users can create forums, participate in open discussions, and engage with posts in real-time. Some features includes, user authentication, real-time chat, responsive UI, themes. This application was made with Java (JavaFX for front-end library), JavaFX CSS for styling, Java Sockets for real-time messaging (client-server architecture), and MySQL for the database engine."
+      },
+      {
+        "heading": "Features",
+        "content": "<strong>User authentication</strong>: Sign-up and sign-in functionality for user access control.<br><strong>Real-time messaging</strong>: Join a forum and chat with others in real-time.<br><strong>Search & Filter</strong>: Quickly find forums and discussions based on criteria.<br><strong>Theming</strong>: Customize the appearance of the application through themes."
+      }
+    ],
+    "previewImages": [
+      "assets/images/project-previews/musang-forum-1.png",
+      "assets/images/project-previews/musang-forum-2.png",
+      "assets/images/project-previews/musang-forum-3.png"
+    ]
+  },
+  {
+    "id": "ho-ohdie",
+    "link": "https://github.com/rainerat/musang-forum",
+    "longDescription": [
+      {
+        "heading": "What is Ho-Ohdie?",
+        "content": "bla bla bla"
+      }
+    ],
+    "previewImages": [
+      "assets/images/project-previews/ho-ohdie.png"
+    ]
+  },
+  {
+    "id": "oildrop",
+    "link": "https://github.com/rainerat/musang-forum",
+    "longDescription": [
+      {
+        "heading": "What is Oildrop?",
+        "content": "bla bla bla"
+      }
+    ],
+    "previewImages": [
+      "assets/images/project-previews/oildrop.png"
+    ]
+  }
+]

@@ -27,19 +27,24 @@
   display: grid;
   grid-template-columns: 2.5rem 1fr;
   gap: 1rem;
-  background: linear-gradient(to right bottom, rgb(81, 81, 81) 0%, rgba(64, 64, 64, 0) 50%);
+  background: linear-gradient(
+    to right bottom,
+    rgb(81, 81, 81) 0%,
+    rgba(64, 64, 64, 0) 50%
+  );
+  box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.15);
   padding: 2rem 1.75rem;
   border-radius: 1rem;
   z-index: 1;
-}
 
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  background: var(--bg-black);
-  border-radius: inherit;
-  z-index: -1;
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: var(--bg-black);
+    border-radius: inherit;
+    z-index: -1;
+  }
 }
 
 .card-svg-cont svg {
@@ -78,7 +83,11 @@
   padding: 2rem;
   text-align: center;
   border-radius: 1rem;
-  background: linear-gradient(to right bottom, rgb(81, 81, 81) 0%, rgba(64, 64, 64, 0) 50%);
+  background: linear-gradient(
+    to right bottom,
+    rgb(81, 81, 81) 0%,
+    rgba(64, 64, 64, 0) 50%
+  );
   z-index: 1;
 }
 

@@ -1,199 +1,411 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Rainer Ariel Timothy - Personal Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Rainer Ariel's Personal Portfolio">
-  <link rel="icon" href="./assets/logo/png/logo-no-background.png" type="image/png">
-  <link rel="stylesheet" href="./styles/globals.css">
-  <link rel="stylesheet" href="./styles/main.css">
-</head>
-<body>
-  <!--
+  <head>
+    <title>Rainer Ariel Timothy - Personal Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Rainer Ariel's Personal Portfolio" />
+    <link
+      rel="icon"
+      href="./assets/logo/png/logo-no-background.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!--
     - #MAIN
-  -->
-  <main class="inner-cont">
-    <!--
+    -->
+    <main class="inner-cont">
+      <!--
       - # SIDEBAR
-    -->
-    <aside class="sidebar">
-      <a class="show-contact-link" href="#" onclick="showContact()">Show Contact</a>
-      <div class="side-header">
-        <div id="img-cont">
-          <div class="img-cont">
-            <img src="./assets/images/fotobinus.jpeg" alt="My Profile Picture">
+      -->
+      <aside class="sidebar">
+        <a class="show-contact-link" href="#" onclick="showContact()">
+          <span>Show Contact</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
+          </svg>
+        </a>
+        <div class="side-header">
+          <div id="img-cont">
+            <div class="img-cont">
+              <img
+                src="./assets/images/fotobinus.jpeg"
+                alt="My Profile Picture"
+              />
+            </div>
+          </div>
+          <div class="side-desc-cont">
+            <div class="my-name">
+              <h2>Rainer Ariel Timothy</h2>
+            </div>
+            <div class="role-tag">
+              <p>Front-End Developer</p>
+            </div>
           </div>
         </div>
-        <div class="side-desc-cont">
-          <div class="my-name">
-            <h2>Rainer Ariel Timothy</h2>
-          </div>
-          <div class="role-tag">
-            <p>Front-End Developer</p>
+        <div class="side-content">
+          <hr class="side-divider" />
+          <div class="info-cont">
+            <a id="email" class="info" href="mailto:r.ariel.timothy@gmail.com">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e8eaed"
+                >
+                  <path
+                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                  />
+                </svg>
+              </div>
+              <div class="text">
+                <p class="info-header">EMAIL</p>
+                <p>r.ariel.timothy@gmail.com</p>
+              </div>
+            </a>
+            <div class="info">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e8eaed"
+                >
+                  <path
+                    d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"
+                  />
+                </svg>
+              </div>
+              <div class="text">
+                <p class="info-header">PHONE</p>
+                <p>+62 811 9888 826</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e8eaed"
+                >
+                  <path
+                    d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"
+                  />
+                </svg>
+              </div>
+              <div class="text">
+                <p class="info-header">BIRTHDAY</p>
+                <p>2 April, 2004</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e8eaed"
+                >
+                  <path
+                    d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+                  />
+                </svg>
+              </div>
+              <div class="text">
+                <p class="info-header">LOCATION</p>
+                <address>DKI Jakarta, Indonesia</address>
+              </div>
+            </div>
+            <div class="socials">
+              <a
+                class="social-link"
+                href="https://linkedin.com/in/rainer-ariel/"
+                target="_blank"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="social-link"
+                href="https://github.com/rainerat/"
+                target="_blank"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="social-link"
+                href="https://instagram.com/rainer_ariel/"
+                target="_blank"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="side-content">
-        <hr class="side-divider">
-        <div class="info-cont">
-          <a id="email" class="info" href="mailto:r.ariel.timothy@gmail.com">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-            </div>
-            <div class="text">
-              <p class="info-header">EMAIL</p>
-              <p>r.ariel.timothy@gmail.com</p>
-            </div>
-          </a>
-          <div class="info">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/></svg>
-            </div>
-            <div class="text">
-              <p class="info-header">PHONE</p>
-              <p>+62 811 9888 826</p>
-            </div>
-          </div>
-          <div class="info">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
-            </div>
-            <div class="text">
-              <p class="info-header">BIRTHDAY</p>
-              <p>2 April, 2004</p>
-            </div>
-          </div>
-          <div class="info">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
-            </div>
-            <div class="text">
-              <p class="info-header">LOCATION</p>
-              <p>DKI Jakarta, Indonesia</p>
-            </div>
-          </div>
-          <div class="socials">
-            <a class="social-link" href="https://linkedin.com/in/rainer-ariel/" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-            </a>
-            <a class="social-link" href="https://github.com/rainerat/" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-            </a>
-            <a class="social-link" href="https://instagram.com/rainer_ariel/" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </aside>
-    <!--
+      </aside>
+      <!--
       - #MAIN-CONTENT
-    -->
-    <div class="main-content">
-      <!--
+      -->
+      <div class="main-content">
+        <!--
         - #NAVBAR
-      -->
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="#" class="nav-link active" data-section="about" onclick="showContent('about')">About</a></li>
-          <li><a href="#" class="nav-link" data-section="projects" onclick="showContent('projects')">Projects</a></li>
-          <li><a href="#" class="nav-link" data-section="contact" onclick="showContent('contact')">Contact Me</a></li>
-        </ul>
-      </nav>
-      <!--
+        -->
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li>
+              <a
+                href="#"
+                class="nav-link active"
+                data-section="about"
+                onclick="showContent('about')"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link"
+                data-section="projects"
+                onclick="showContent('projects')"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link"
+                data-section="contact"
+                onclick="showContent('contact')"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!--
         - #ABOUT
-      -->
-      <section id="about">
-        <div class="about-cont">
-          <div class="section-header">
-            <h1>About Me</h1>
-            <hr>
-          </div>
-          <div class="about-desc">
-            <p>
-              My name is Rainer Ariel Timothy. I am an Undergraduate Information
-              Systems student at BINUS University.
-            </p>
-            <p>
-              I have been developing software for <strong>3 years</strong> and have recently started
-              learning web development. I love to build beautifully simple looking user
-              interfaces that focuses on user experience.
-            </p>
-            <p>
-              I like <strong>minimalism</strong>.
-            </p>
-          </div>
-          <div id="what-im-doing" class="about-sec">
-            <h2>What I'm doing</h2>
-            <div class="cards">
-              <div class="card">
-                <div class="card-svg-cont">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m352-522 86-87-56-57-44 44-56-56 43-44-45-45-87 87 159 158Zm328 329 87-87-45-45-44 43-56-56 43-44-57-56-86 86 158 159Zm24-567 57 57-57-57ZM290-120H120v-170l175-175L80-680l200-200 216 216 151-152q12-12 27-18t31-6q16 0 31 6t27 18l53 54q12 12 18 27t6 31q0 16-6 30.5T816-647L665-495l215 215L680-80 465-295 290-120Zm-90-80h56l392-391-57-57-391 392v56Zm420-419-29-29 57 57-28-28Z"/></svg>
+        -->
+        <section id="about">
+          <div class="about-cont">
+            <div class="section-header">
+              <h1>About Me</h1>
+              <hr />
+            </div>
+            <div class="about-desc">
+              <p>
+                My name is Rainer Ariel Timothy. I am an Undergraduate
+                Information Systems student at BINUS University.
+              </p>
+              <p>
+                I have <strong>3 years</strong> of software development
+                experience. I'm passionate about front-end design, making clean,
+                user-friendly interfaces. I'm now expanding my skills in web
+                development.
+              </p>
+              <p>
+                I believe that simplicity is key for a great website, keeping
+                users engaged without unnecessary complexity. I also prioritize
+                writing clean, readable code in every project, ensuring that my
+                work is maintainable.
+              </p>
+            </div>
+            <div id="what-im-doing" class="about-sec">
+              <h2>What I'm doing</h2>
+              <div class="cards">
+                <div class="card">
+                  <div class="card-svg-cont">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="m352-522 86-87-56-57-44 44-56-56 43-44-45-45-87 87 159 158Zm328 329 87-87-45-45-44 43-56-56 43-44-57-56-86 86 158 159Zm24-567 57 57-57-57ZM290-120H120v-170l175-175L80-680l200-200 216 216 151-152q12-12 27-18t31-6q16 0 31 6t27 18l53 54q12 12 18 27t6 31q0 16-6 30.5T816-647L665-495l215 215L680-80 465-295 290-120Zm-90-80h56l392-391-57-57-391 392v56Zm420-419-29-29 57 57-28-28Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="card-description-cont">
+                    <h3>User Interface Design</h3>
+                    <p>
+                      Designing modern, high-quality user interfaces that focus
+                      on usability and aesthetic appeal.
+                    </p>
+                  </div>
                 </div>
-                <div class="card-description-cont">
-                  <h3>User Interface Design</h3>
-                  <p>Designing modern, high-quality user interfaces that focus on usability and aesthetic appeal.</p>
+                <div class="card">
+                  <div class="card-svg-cont">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M80-160v-120h80v-440q0-33 23.5-56.5T240-800h600v80H240v440h240v120H80Zm520 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="card-description-cont">
+                    <h3>Front-End Web Development</h3>
+                    <p>
+                      Building responsive websites using HTML, CSS, and
+                      JavaScript. With a focus on improving my skills.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="card-svg-cont">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M80-160v-120h80v-440q0-33 23.5-56.5T240-800h600v80H240v440h240v120H80Zm520 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z"/></svg>
+                <div class="card">
+                  <div class="card-svg-cont">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M320-120v-80h80v-80H160q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v400q0 33-23.5 56.5T800-280H560v80h80v80H320ZM160-360h640v-400H160v400Zm0 0v-400 400Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="card-description-cont">
+                    <h3>Desktop Application Development</h3>
+                    <p>
+                      Developing robust desktop applications using Java, with
+                      experience in object-oriented programming.
+                    </p>
+                  </div>
                 </div>
-                <div class="card-description-cont">
-                  <h3>Front-End Web Development</h3>
-                  <p>Building responsive websites using HTML, CSS, and JavaScript. With a focus on improving my skills.</p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-svg-cont">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-120v-80h80v-80H160q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v400q0 33-23.5 56.5T800-280H560v80h80v80H320ZM160-360h640v-400H160v400Zm0 0v-400 400Z"/></svg>
-                </div>
-                <div class="card-description-cont">
-                  <h3>Desktop Application Development</h3>
-                  <p>Developing robust desktop applications using Java, with experience in object-oriented programming.</p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-svg-cont">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"/></svg>
-                </div>
-                <div class="card-description-cont">
-                  <h3>Database Design</h3>
-                  <p>Designing, developing, and maintaining efficient databases to support dynamic applications.</p>
+                <div class="card">
+                  <div class="card-svg-cont">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="card-description-cont">
+                    <h3>Database Design</h3>
+                    <p>
+                      Designing, developing, and maintaining efficient databases
+                      to support dynamic applications.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div id="what-i-work-with" class="about-sec">
-            <h2>What I work with</h2>
-            <div class="about-techs">
-              <div class="tech java">
-                <div class="tech-logo-cont">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 32 32"><path d="M11.622 24.74s-1.23.748.855.962c2.51.32 3.847.267 6.625-.267a10.02 10.02 0 0 0 1.763.855c-6.25 2.672-14.16-.16-9.244-1.55zm-.8-3.473s-1.336 1.015.748 1.23c2.725.267 4.862.32 8.55-.427a3.26 3.26 0 0 0 1.282.801c-7.534 2.244-15.976.214-10.58-1.603zm14.747 6.09s.908.748-1.015 1.336c-3.58 1.07-15.014 1.39-18.22 0-1.122-.48 1.015-1.175 1.7-1.282.695-.16 1.07-.16 1.07-.16-1.23-.855-8.175 1.763-3.526 2.51 12.77 2.084 23.296-.908 19.983-2.404zM12.2 17.633s-5.824 1.39-2.084 1.87c1.603.214 4.755.16 7.694-.053 2.404-.214 4.81-.64 4.81-.64s-.855.374-1.443.748c-5.93 1.55-17.312.855-14.052-.748 2.778-1.336 5.076-1.175 5.076-1.175zm10.42 5.824c5.984-3.1 3.206-6.09 1.282-5.717-.48.107-.695.214-.695.214s.16-.32.534-.427c3.794-1.336 6.786 4.007-1.23 6.09 0 0 .053-.053.107-.16zm-9.83 8.442c5.77.374 14.587-.214 14.8-2.94 0 0-.427 1.07-4.755 1.87-4.916.908-11.007.8-14.587.214 0 0 .748.64 4.542.855z"/><path d="M18.996.001s3.313 3.366-3.152 8.442c-5.183 4.114-1.175 6.465 0 9.137-3.046-2.725-5.236-5.13-3.74-7.373C14.294 6.893 20.332 5.3 18.996.001zm-1.7 15.335c1.55 1.763-.427 3.366-.427 3.366s3.954-2.03 2.137-4.542c-1.656-2.404-2.94-3.58 4.007-7.587 0 0-10.953 2.725-5.717 8.763z"/></svg>
+            <div id="what-i-work-with" class="about-sec">
+              <h2>What I work with</h2>
+              <div class="about-techs">
+                <div class="tech java">
+                  <div class="tech-logo-cont">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="70px"
+                      height="70px"
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        d="M11.622 24.74s-1.23.748.855.962c2.51.32 3.847.267 6.625-.267a10.02 10.02 0 0 0 1.763.855c-6.25 2.672-14.16-.16-9.244-1.55zm-.8-3.473s-1.336 1.015.748 1.23c2.725.267 4.862.32 8.55-.427a3.26 3.26 0 0 0 1.282.801c-7.534 2.244-15.976.214-10.58-1.603zm14.747 6.09s.908.748-1.015 1.336c-3.58 1.07-15.014 1.39-18.22 0-1.122-.48 1.015-1.175 1.7-1.282.695-.16 1.07-.16 1.07-.16-1.23-.855-8.175 1.763-3.526 2.51 12.77 2.084 23.296-.908 19.983-2.404zM12.2 17.633s-5.824 1.39-2.084 1.87c1.603.214 4.755.16 7.694-.053 2.404-.214 4.81-.64 4.81-.64s-.855.374-1.443.748c-5.93 1.55-17.312.855-14.052-.748 2.778-1.336 5.076-1.175 5.076-1.175zm10.42 5.824c5.984-3.1 3.206-6.09 1.282-5.717-.48.107-.695.214-.695.214s.16-.32.534-.427c3.794-1.336 6.786 4.007-1.23 6.09 0 0 .053-.053.107-.16zm-9.83 8.442c5.77.374 14.587-.214 14.8-2.94 0 0-.427 1.07-4.755 1.87-4.916.908-11.007.8-14.587.214 0 0 .748.64 4.542.855z"
+                      />
+                      <path
+                        d="M18.996.001s3.313 3.366-3.152 8.442c-5.183 4.114-1.175 6.465 0 9.137-3.046-2.725-5.236-5.13-3.74-7.373C14.294 6.893 20.332 5.3 18.996.001zm-1.7 15.335c1.55 1.763-.427 3.366-.427 3.366s3.954-2.03 2.137-4.542c-1.656-2.404-2.94-3.58 4.007-7.587 0 0-10.953 2.725-5.717 8.763z"
+                      />
+                    </svg>
+                  </div>
+                  <span>Java</span>
                 </div>
-                <span>Java</span>
-              </div>
-              <div class="tech csharp">
-                <div class="tech-logo-cont">
-                  <svg width="70px" height="70px" viewBox="0 0 256 288" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                    <g>
-                      <path d="M255.569,84.452376 C255.567,79.622376 254.534,75.354376 252.445,71.691376 C250.393,68.089376 247.32,65.070376 243.198,62.683376 C209.173,43.064376 175.115,23.505376 141.101,3.86637605 C131.931,-1.42762395 123.04,-1.23462395 113.938,4.13537605 C100.395,12.122376 32.59,50.969376 12.385,62.672376 C4.064,67.489376 0.015,74.861376 0.013,84.443376 C0,123.898376 0.013,163.352376 0,202.808376 C0,207.532376 0.991,211.717376 2.988,215.325376 C5.041,219.036376 8.157,222.138376 12.374,224.579376 C32.58,236.282376 100.394,275.126376 113.934,283.115376 C123.04,288.488376 131.931,288.680376 141.104,283.384376 C175.119,263.744376 209.179,244.186376 243.209,224.567376 C247.426,222.127376 250.542,219.023376 252.595,215.315376 C254.589,211.707376 255.582,207.522376 255.582,202.797376 C255.582,202.797376 255.582,123.908376 255.569,84.452376" fill-rule="nonzero"></path>
-                      <path d="M128.182,143.241376 L2.988,215.325376 C5.041,219.036376 8.157,222.138376 12.374,224.579376 C32.58,236.282376 100.394,275.126376 113.934,283.115376 C123.04,288.488376 131.931,288.680376 141.104,283.384376 C175.119,263.744376 209.179,244.186376 243.209,224.567376 C247.426,222.127376 250.542,219.023376 252.595,215.315376 L128.182,143.241376" fill-rule="nonzero"></path>
-                      <path d="M255.569,84.452376 C255.567,79.622376 254.534,75.354376 252.445,71.691376 L128.182,143.241376 L252.595,215.315376 C254.589,211.707376 255.58,207.522376 255.582,202.797376 C255.582,202.797376 255.582,123.908376 255.569,84.452376" fill-rule="nonzero"></path>
-                      <path d="M201.892326,116.294008 L201.892326,129.767692 L215.36601,129.767692 L215.36601,116.294008 L222.102852,116.294008 L222.102852,129.767692 L235.576537,129.767692 L235.576537,136.504534 L222.102852,136.504534 L222.102852,149.978218 L235.576537,149.978218 L235.576537,156.71506 L222.102852,156.71506 L222.102852,170.188744 L215.36601,170.188744 L215.36601,156.71506 L201.892326,156.71506 L201.892326,170.188744 L195.155484,170.188744 L195.155484,156.71506 L181.6818,156.71506 L181.6818,149.978218 L195.155484,149.978218 L195.155484,136.504534 L181.6818,136.504534 L181.6818,129.767692 L195.155484,129.767692 L195.155484,116.294008 L201.892326,116.294008 Z M215.36601,136.504534 L201.892326,136.504534 L201.892326,149.978218 L215.36601,149.978218 L215.36601,136.504534 Z" fill="#212730"></path>
-                      <path d="M128.456752,48.625876 C163.600523,48.625876 194.283885,67.7121741 210.718562,96.0819435 L210.558192,95.808876 L169.209615,119.617159 C161.062959,105.823554 146.128136,96.5150717 128.996383,96.3233722 L128.456752,96.3203544 C102.331178,96.3203544 81.1506705,117.499743 81.1506705,143.625316 C81.1506705,152.168931 83.4284453,160.17752 87.3896469,167.094792 C95.543745,181.330045 110.872554,190.931398 128.456752,190.931398 C146.149522,190.931398 161.565636,181.208041 169.67832,166.820563 L169.481192,167.165876 L210.767678,191.083913 C194.51328,219.21347 164.25027,238.240861 129.514977,238.620102 L128.456752,238.625876 C93.2021701,238.625876 62.4315028,219.422052 46.0382398,190.902296 C38.0352471,176.979327 33.4561922,160.837907 33.4561922,143.625316 C33.4561922,91.1592636 75.9884604,48.625876 128.456752,48.625876 Z" fill="#212730" fill-rule="nonzero"></path>
-                    </g>
-                  </svg>
+                <div class="tech csharp">
+                  <div class="tech-logo-cont">
+                    <svg
+                      width="70px"
+                      height="70px"
+                      viewBox="0 0 256 288"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      preserveAspectRatio="xMidYMid"
+                    >
+                      <g>
+                        <path
+                          d="M255.569,84.452376 C255.567,79.622376 254.534,75.354376 252.445,71.691376 C250.393,68.089376 247.32,65.070376 243.198,62.683376 C209.173,43.064376 175.115,23.505376 141.101,3.86637605 C131.931,-1.42762395 123.04,-1.23462395 113.938,4.13537605 C100.395,12.122376 32.59,50.969376 12.385,62.672376 C4.064,67.489376 0.015,74.861376 0.013,84.443376 C0,123.898376 0.013,163.352376 0,202.808376 C0,207.532376 0.991,211.717376 2.988,215.325376 C5.041,219.036376 8.157,222.138376 12.374,224.579376 C32.58,236.282376 100.394,275.126376 113.934,283.115376 C123.04,288.488376 131.931,288.680376 141.104,283.384376 C175.119,263.744376 209.179,244.186376 243.209,224.567376 C247.426,222.127376 250.542,219.023376 252.595,215.315376 C254.589,211.707376 255.582,207.522376 255.582,202.797376 C255.582,202.797376 255.582,123.908376 255.569,84.452376"
+                          fill-rule="nonzero"
+                        ></path>
+                        <path
+                          d="M128.182,143.241376 L2.988,215.325376 C5.041,219.036376 8.157,222.138376 12.374,224.579376 C32.58,236.282376 100.394,275.126376 113.934,283.115376 C123.04,288.488376 131.931,288.680376 141.104,283.384376 C175.119,263.744376 209.179,244.186376 243.209,224.567376 C247.426,222.127376 250.542,219.023376 252.595,215.315376 L128.182,143.241376"
+                          fill-rule="nonzero"
+                        ></path>
+                        <path
+                          d="M255.569,84.452376 C255.567,79.622376 254.534,75.354376 252.445,71.691376 L128.182,143.241376 L252.595,215.315376 C254.589,211.707376 255.58,207.522376 255.582,202.797376 C255.582,202.797376 255.582,123.908376 255.569,84.452376"
+                          fill-rule="nonzero"
+                        ></path>
+                        <path
+                          d="M201.892326,116.294008 L201.892326,129.767692 L215.36601,129.767692 L215.36601,116.294008 L222.102852,116.294008 L222.102852,129.767692 L235.576537,129.767692 L235.576537,136.504534 L222.102852,136.504534 L222.102852,149.978218 L235.576537,149.978218 L235.576537,156.71506 L222.102852,156.71506 L222.102852,170.188744 L215.36601,170.188744 L215.36601,156.71506 L201.892326,156.71506 L201.892326,170.188744 L195.155484,170.188744 L195.155484,156.71506 L181.6818,156.71506 L181.6818,149.978218 L195.155484,149.978218 L195.155484,136.504534 L181.6818,136.504534 L181.6818,129.767692 L195.155484,129.767692 L195.155484,116.294008 L201.892326,116.294008 Z M215.36601,136.504534 L201.892326,136.504534 L201.892326,149.978218 L215.36601,149.978218 L215.36601,136.504534 Z"
+                          fill="#212730"
+                        ></path>
+                        <path
+                          d="M128.456752,48.625876 C163.600523,48.625876 194.283885,67.7121741 210.718562,96.0819435 L210.558192,95.808876 L169.209615,119.617159 C161.062959,105.823554 146.128136,96.5150717 128.996383,96.3233722 L128.456752,96.3203544 C102.331178,96.3203544 81.1506705,117.499743 81.1506705,143.625316 C81.1506705,152.168931 83.4284453,160.17752 87.3896469,167.094792 C95.543745,181.330045 110.872554,190.931398 128.456752,190.931398 C146.149522,190.931398 161.565636,181.208041 169.67832,166.820563 L169.481192,167.165876 L210.767678,191.083913 C194.51328,219.21347 164.25027,238.240861 129.514977,238.620102 L128.456752,238.625876 C93.2021701,238.625876 62.4315028,219.422052 46.0382398,190.902296 C38.0352471,176.979327 33.4561922,160.837907 33.4561922,143.625316 C33.4561922,91.1592636 75.9884604,48.625876 128.456752,48.625876 Z"
+                          fill="#212730"
+                          fill-rule="nonzero"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <span>C#</span>
                 </div>
-                <span>C#</span>
-              </div>
-              <div class="tech html5">
-                <div class="tech-logo-cont">
-                  <svg fill="#000000" height="70px" width="70px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                     viewBox="0 0 299.215 299.215" xml:space="preserve">
-<g id="XMLID_106_">
-	<path id="XMLID_107_" d="M22.347,0c-2.75,0-4.799,2.241-4.555,4.98l23.184,260.047c0.244,2.739,2.611,5.582,5.262,6.318
+                <div class="tech html5">
+                  <div class="tech-logo-cont">
+                    <svg
+                      fill="#000000"
+                      height="70px"
+                      width="70px"
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 299.215 299.215"
+                      xml:space="preserve"
+                    >
+                      <g id="XMLID_106_">
+                        <path
+                          id="XMLID_107_"
+                          d="M22.347,0c-2.75,0-4.799,2.241-4.555,4.98l23.184,260.047c0.244,2.739,2.611,5.582,5.262,6.318
 		l98.381,27.316c2.65,0.736,6.986,0.736,9.637,0.002l98.68-27.361c2.65-0.735,5.02-3.578,5.264-6.316L281.422,4.98
 		c0.246-2.739-1.805-4.98-4.555-4.98H22.347z M232.049,59.641c-0.219,2.443-0.598,6.684-0.842,9.423l-0.611,6.823
 		c-0.246,2.738-0.596,6.654-0.781,8.701c-0.184,2.048-0.359,3.723-0.391,3.723c-0.031,0-2.307,0-5.057,0h-69.76
@@ -206,260 +418,470 @@
 		c2.654,0.717,4.836,1.304,4.848,1.304s2.193-0.588,4.848-1.305l27.27-7.369c2.654-0.717,5.027-3.545,5.273-6.283l2.957-32.976
 		c0.246-2.739-1.803-4.98-4.553-4.98h-30.666c-2.75,0-5.023,0-5.053,0s-2.305,0-5.055,0H80.511c-2.75,0-5.199-2.242-5.443-4.98
 		l-7.256-81.306c-0.244-2.739-0.623-6.979-0.842-9.423c-0.217-2.443,1.854-4.442,4.604-4.442H144.5c2.75,0,5.025,0,5.055,0
-		s2.303,0,5.053,0h72.838C230.195,55.198,232.267,57.197,232.049,59.641z"/>
-</g>
-</svg>
+		s2.303,0,5.053,0h72.838C230.195,55.198,232.267,57.197,232.049,59.641z"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <span>HTML5</span>
                 </div>
-                <span>HTML5</span>
-              </div>
-              <div class="tech css3">
-                <div class="tech-logo-cont">
-                  <svg fill="#000000"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="70px" height="70px"
-                     viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-<g id="c133de6af664cd4f011a55de6b001b19">
-<path display="inline" d="M483.111,0.501l-42.59,461.314l-184.524,49.684L71.47,461.815L28.889,0.501H483.111z M397.29,94.302
+                <div class="tech css3">
+                  <div class="tech-logo-cont">
+                    <svg
+                      fill="#000000"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="70px"
+                      height="70px"
+                      viewBox="0 0 512 512"
+                      enable-background="new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g id="c133de6af664cd4f011a55de6b001b19">
+                        <path
+                          display="inline"
+                          d="M483.111,0.501l-42.59,461.314l-184.524,49.684L71.47,461.815L28.889,0.501H483.111z M397.29,94.302
 		H255.831H111.866l6.885,55.708h137.08h7.7l-7.7,3.205l-132.07,55.006l4.38,54.453l127.69,0.414l68.438,0.217l-4.381,72.606
 		l-64.058,18.035v-0.057l-0.525,0.146l-61.864-15.617l-3.754-45.07h-0.205H132.1h-0.202l7.511,87.007l116.423,34.429v-0.062
-		l0.21,0.062l115.799-33.802l15.021-172.761h-131.03h-0.323l0.323-0.14l135.83-58.071L397.29,94.302z">
-
-</path>
-</g>
-</svg>
-                </div>
-                <span>CSS3</span>
-              </div>
-              <div class="tech js">
-                <div class="tech-logo-cont">
-                  <svg width="70px" height="70px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Dribbble-Light-Preview" transform="translate(-420.000000, -7479.000000)" fill="#FFD369">
-                      <g id="icons" transform="translate(56.000000, 160.000000)">
-                        <path d="M379.328,7337.432 C377.583,7337.432 376.455,7336.6 375.905,7335.512 L375.905,7335.512 L377.435,7334.626 C377.838,7335.284 378.361,7335.767 379.288,7335.767 C380.066,7335.767 380.563,7335.378 380.563,7334.841 C380.563,7334.033 379.485,7333.717 378.724,7333.391 C377.368,7332.814 376.468,7332.089 376.468,7330.558 C376.468,7329.149 377.542,7328.075 379.221,7328.075 C380.415,7328.075 381.275,7328.491 381.892,7329.578 L380.429,7330.518 C380.107,7329.941 379.758,7329.713 379.221,7329.713 C378.67,7329.713 378.321,7330.062 378.321,7330.518 C378.321,7331.082 378.67,7331.31 379.476,7331.659 C381.165,7332.383 382.443,7332.952 382.443,7334.814 C382.443,7336.506 381.114,7337.432 379.328,7337.432 L379.328,7337.432 Z M375,7334.599 C375,7336.546 373.801,7337.575 372.136,7337.575 C370.632,7337.575 369.731,7337 369.288,7336 L369.273,7336 L369.266,7336 L369.262,7336 L370.791,7334.931 C371.086,7335.454 371.352,7335.825 371.996,7335.825 C372.614,7335.825 373,7335.512 373,7334.573 L373,7328 L375,7328 L375,7334.599 Z M364,7339 L384,7339 L384,7319 L364,7319 L364,7339 Z" id="javascript-[#155]"></path>
+		l0.21,0.062l115.799-33.802l15.021-172.761h-131.03h-0.323l0.323-0.14l135.83-58.071L397.29,94.302z"
+                        ></path>
                       </g>
-                    </g>
-                  </g>
-                </svg>
+                    </svg>
+                  </div>
+                  <span>CSS3</span>
                 </div>
-              <span>JavaScript</span>
-              </div>
-              <div class="tech mysql">
-                <div class="tech-logo-cont">
-                  <svg fill="#000000" width="70px" height="70px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m24.129 23.412-.508-.484c-.251-.331-.518-.624-.809-.891l-.005-.004q-.448-.407-.931-.774-.387-.266-1.064-.641c-.371-.167-.661-.46-.818-.824l-.004-.01-.048-.024c.212-.021.406-.06.592-.115l-.023.006.57-.157c.236-.074.509-.122.792-.133h.006c.298-.012.579-.06.847-.139l-.025.006q.194-.048.399-.109t.351-.109v-.169q-.145-.217-.351-.496c-.131-.178-.278-.333-.443-.468l-.005-.004q-.629-.556-1.303-1.076c-.396-.309-.845-.624-1.311-.916l-.068-.04c-.246-.162-.528-.312-.825-.435l-.034-.012q-.448-.182-.883-.399c-.097-.048-.21-.09-.327-.119l-.011-.002c-.117-.024-.217-.084-.29-.169l-.001-.001c-.138-.182-.259-.389-.355-.609l-.008-.02q-.145-.339-.314-.651-.363-.702-.702-1.427t-.651-1.452q-.217-.484-.399-.967c-.134-.354-.285-.657-.461-.942l.013.023c-.432-.736-.863-1.364-1.331-1.961l.028.038c-.463-.584-.943-1.106-1.459-1.59l-.008-.007c-.509-.478-1.057-.934-1.632-1.356l-.049-.035q-.896-.651-1.96-1.282c-.285-.168-.616-.305-.965-.393l-.026-.006-1.113-.278-.629-.048q-.314-.024-.629-.024c-.148-.078-.275-.171-.387-.279-.11-.105-.229-.204-.353-.295l-.01-.007c-.605-.353-1.308-.676-2.043-.93l-.085-.026c-.193-.113-.425-.179-.672-.179-.176 0-.345.034-.499.095l.009-.003c-.38.151-.67.458-.795.84l-.003.01c-.073.172-.115.371-.115.581 0 .368.13.705.347.968l-.002-.003q.544.725.834 1.14.217.291.448.605c.141.188.266.403.367.63l.008.021c.056.119.105.261.141.407l.003.016q.048.206.121.448.217.556.411 1.14c.141.425.297.785.478 1.128l-.019-.04q.145.266.291.52t.314.496c.065.098.147.179.241.242l.003.002c.099.072.164.185.169.313v.001c-.114.168-.191.369-.217.586l-.001.006c-.035.253-.085.478-.153.695l.008-.03c-.223.666-.351 1.434-.351 2.231 0 .258.013.512.04.763l-.003-.031c.06.958.349 1.838.812 2.6l-.014-.025c.197.295.408.552.641.787.168.188.412.306.684.306.152 0 .296-.037.422-.103l-.005.002c.35-.126.599-.446.617-.827v-.002c.048-.474.12-.898.219-1.312l-.013.067c.024-.063.038-.135.038-.211 0-.015-.001-.03-.002-.045v.002q-.012-.109.133-.206v.048q.145.339.302.677t.326.677c.295.449.608.841.952 1.202l-.003-.003c.345.372.721.706 1.127 1.001l.022.015c.212.162.398.337.566.528l.004.004c.158.186.347.339.56.454l.01.005v-.024h.048c-.039-.087-.102-.157-.18-.205l-.002-.001c-.079-.044-.147-.088-.211-.136l.005.003q-.217-.217-.448-.484t-.423-.508q-.508-.702-.969-1.467t-.871-1.555q-.194-.387-.375-.798t-.351-.798c-.049-.099-.083-.213-.096-.334v-.005c-.006-.115-.072-.214-.168-.265l-.002-.001c-.121.206-.255.384-.408.545l.001-.001c-.159.167-.289.364-.382.58l-.005.013c-.141.342-.244.739-.289 1.154l-.002.019q-.072.641-.145 1.318l-.048.024-.024.024c-.26-.053-.474-.219-.59-.443l-.002-.005q-.182-.351-.326-.69c-.248-.637-.402-1.374-.423-2.144v-.009c-.009-.122-.013-.265-.013-.408 0-.666.105-1.308.299-1.91l-.012.044q.072-.266.314-.896t.097-.871c-.05-.165-.143-.304-.265-.41l-.001-.001c-.122-.106-.233-.217-.335-.335l-.003-.004q-.169-.244-.326-.52t-.278-.544c-.165-.382-.334-.861-.474-1.353l-.022-.089c-.159-.565-.336-1.043-.546-1.503l.026.064c-.111-.252-.24-.47-.39-.669l.006.008q-.244-.326-.436-.617-.244-.314-.484-.605c-.163-.197-.308-.419-.426-.657l-.009-.02c-.048-.097-.09-.21-.119-.327l-.002-.011c-.011-.035-.017-.076-.017-.117 0-.082.024-.159.066-.223l-.001.002c.011-.056.037-.105.073-.145.039-.035.089-.061.143-.072h.002c.085-.055.188-.088.3-.088.084 0 .165.019.236.053l-.003-.001c.219.062.396.124.569.195l-.036-.013q.459.194.847.375c.298.142.552.292.792.459l-.018-.012q.194.121.387.266t.411.291h.339q.387 0 .822.037c.293.023.564.078.822.164l-.024-.007c.481.143.894.312 1.286.515l-.041-.019q.593.302 1.125.641c.589.367 1.098.743 1.577 1.154l-.017-.014c.5.428.954.867 1.38 1.331l.01.012c.416.454.813.947 1.176 1.464l.031.047c.334.472.671 1.018.974 1.584l.042.085c.081.154.163.343.234.536l.011.033q.097.278.217.57.266.605.57 1.221t.57 1.198l.532 1.161c.187.406.396.756.639 1.079l-.011-.015c.203.217.474.369.778.422l.008.001c.368.092.678.196.978.319l-.047-.017c.143.065.327.134.516.195l.04.011c.212.065.396.151.565.259l-.009-.005c.327.183.604.363.868.559l-.021-.015q.411.302.822.57.194.145.651.423t.484.52c-.114-.004-.249-.007-.384-.007-.492 0-.976.032-1.45.094l.056-.006c-.536.072-1.022.203-1.479.39l.04-.014c-.113.049-.248.094-.388.129l-.019.004c-.142.021-.252.135-.266.277v.001c.061.076.11.164.143.26l.002.006c.034.102.075.19.125.272l-.003-.006c.119.211.247.393.391.561l-.004-.005c.141.174.3.325.476.454l.007.005q.244.194.508.399c.161.126.343.25.532.362l.024.013c.284.174.614.34.958.479l.046.016c.374.15.695.324.993.531l-.016-.011q.291.169.58.375t.556.399c.073.072.137.152.191.239l.003.005c.091.104.217.175.36.193h.003v-.048c-.088-.067-.153-.16-.184-.267l-.001-.004c-.025-.102-.062-.191-.112-.273l.002.004zm-18.576-19.205q-.194 0-.363.012c-.115.008-.222.029-.323.063l.009-.003v.024h.048q.097.145.244.326t.266.351l.387.798.048-.024c.113-.082.2-.192.252-.321l.002-.005c.052-.139.082-.301.082-.469 0-.018 0-.036-.001-.054v.003c-.045-.044-.082-.096-.108-.154l-.001-.003-.081-.182c-.053-.084-.127-.15-.214-.192l-.003-.001c-.094-.045-.174-.102-.244-.169z"/></svg>
+                <div class="tech js">
+                  <div class="tech-logo-cont">
+                    <svg
+                      width="70px"
+                      height="70px"
+                      viewBox="0 0 20 20"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="Dribbble-Light-Preview"
+                          transform="translate(-420.000000, -7479.000000)"
+                          fill="#FFD369"
+                        >
+                          <g
+                            id="icons"
+                            transform="translate(56.000000, 160.000000)"
+                          >
+                            <path
+                              d="M379.328,7337.432 C377.583,7337.432 376.455,7336.6 375.905,7335.512 L375.905,7335.512 L377.435,7334.626 C377.838,7335.284 378.361,7335.767 379.288,7335.767 C380.066,7335.767 380.563,7335.378 380.563,7334.841 C380.563,7334.033 379.485,7333.717 378.724,7333.391 C377.368,7332.814 376.468,7332.089 376.468,7330.558 C376.468,7329.149 377.542,7328.075 379.221,7328.075 C380.415,7328.075 381.275,7328.491 381.892,7329.578 L380.429,7330.518 C380.107,7329.941 379.758,7329.713 379.221,7329.713 C378.67,7329.713 378.321,7330.062 378.321,7330.518 C378.321,7331.082 378.67,7331.31 379.476,7331.659 C381.165,7332.383 382.443,7332.952 382.443,7334.814 C382.443,7336.506 381.114,7337.432 379.328,7337.432 L379.328,7337.432 Z M375,7334.599 C375,7336.546 373.801,7337.575 372.136,7337.575 C370.632,7337.575 369.731,7337 369.288,7336 L369.273,7336 L369.266,7336 L369.262,7336 L370.791,7334.931 C371.086,7335.454 371.352,7335.825 371.996,7335.825 C372.614,7335.825 373,7335.512 373,7334.573 L373,7328 L375,7328 L375,7334.599 Z M364,7339 L384,7339 L384,7319 L364,7319 L364,7339 Z"
+                              id="javascript-[#155]"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <span>JavaScript</span>
                 </div>
-              <span>MySQL</span>
-              </div>
-              <div class="tech sqlserver">
-                <div class="tech-logo-cont">
-                  <svg width="70px" height="70px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M55.25 4.15c-.33.11-2.1.68-3.96 1.29-10 3.27-17.08 7.06-18.84 10.06-.67 1.15-.8 2.08-.4 3.01.44 1.05 1.25 1.84 3.47 3.41 1.04.73 2.81 2.26 3.96 3.41 5.5 5.49 8.17 12.22 7.87 19.83-.34 8.56-4.35 17.12-12.03 25.69-2.68 2.99-5.43 5.48-10.71 9.71-4.4 3.52-6.79 5.8-8.42 8.01-4.99 6.8-3.66 12.86 3.96 17.92 6.72 4.47 18.56 8.19 32.51 10.21 4.68.68 9.97 1.11 11.24.92l.89-.13 1.4-2.52c7.08-12.75 10.66-24.77 11.09-37.21.19-5.55-.51-12.12-1.7-15.96-.22-.69-.38-1.28-.35-1.3.02-.02 2-.61 4.4-1.33 12.61-3.76 24.81-6.72 34.89-8.47 1.96-.34 3.64-.69 3.73-.78.54-.53-1.03-2.98-3.58-5.61-9.43-9.73-26.09-17.14-45.64-20.29-3.77-.61-4.23-.83-5.63-2.68-2.22-2.94-4.31-7.97-7.16-17.17-.09-.28-.18-.28-.99-.02zm1.3 3.46c1.1 2.99 1.77 5.34 1.77 6.17v.65l-.93-.11c-5.04-.58-13.08-1.83-14.79-2.29-.44-.12-.69-.29-.61-.42.13-.21 1.84-1.03 6.92-3.34 4.74-2.15 6.54-2.95 6.68-2.96.06 0 .49 1.03.96 2.3zm-10.66 6.31c6.15 1.29 10.63 2.1 11.62 2.1.96 0 .85.08-3.67 2.84-3.49 2.12-3.89 2.32-4.77 2.32h-.96l-2.58-2.62c-3.13-3.17-5.25-5.49-5.25-5.75 0-.11.06-.14.15-.09.08.04 2.55.59 5.46 1.2zm-4.54 2.91c1.51 1.76 2.68 3.24 2.62 3.31-.13.13-4.44-.94-7.08-1.75-2.3-.71-2.58-.95-1.97-1.73.4-.52 3.37-3 3.59-3.01.06-.01 1.33 1.41 2.84 3.18zm19.62 3.65c.6 1.43 1.06 2.59 1.04 2.61-.03.02-8.11-1.23-8.82-1.37-.15-.03 1.22-.96 3.06-2.08s3.41-1.97 3.49-1.88c.08.07.63 1.29 1.23 2.72zm-17.62 2.71c.16.16 2.09 6.36 2 6.44-.03.03-.95-1.03-2.04-2.38-1.1-1.35-2.75-3.24-3.7-4.23l-1.71-1.79 2.67.92c1.46.51 2.72.98 2.78 1.04zm7.72.83c3.35.48 6.13.91 6.18.96.04.05-1.98 1.62-4.5 3.5-2.52 1.87-4.6 3.38-4.63 3.35-.03-.03-.28-.81-.56-1.74-.28-.93-1-2.86-1.59-4.31-.59-1.45-1.05-2.63-1.03-2.63.02 0 2.78.4 6.13.87zm8.42 2.68c.74 1.73 1.03 3.39 1.15 6.7.06 1.78.07 3.23.01 3.23-.06 0-1.12-.37-2.35-.81-2.46-.89-7.28-2.48-7.85-2.59-.25-.05.91-1.16 3.96-3.79 2.38-2.05 4.4-3.72 4.49-3.72.1.01.36.45.59.98zm8.64.42c3.71.76 6.95 1.44 7.21 1.5.37.09-.52.65-4.44 2.8-2.7 1.48-5.76 3.16-6.8 3.75-1.05.59-1.91 1.04-1.93 1.02-.02-.02.09-.57.24-1.23.56-2.4.21-5.4-.91-7.79-.33-.69-.6-1.3-.6-1.35 0-.17.67-.05 7.23 1.3zm10.11 4.53c-.19.84-.6 2.27-.93 3.2-.71 2.04-3.3 7.33-3.65 7.47-.14.06-1.36-.51-2.69-1.25-1.33-.74-3.26-1.72-4.27-2.17l-1.84-.82 6.79-4.35c5.63-3.61 6.8-4.29 6.86-3.97.04.2-.08 1.05-.27 1.89zm4.96-1.55c7.04 2.02 14.47 4.75 14.04 5.16-.09.08-1.01.39-2.04.68-5.31 1.51-12.7 4.06-16.16 5.58-1.07.47-2 .82-2.05.77-.05-.05.37-1.61.94-3.45 1.11-3.63 2.4-8.53 2.4-9.16 0-.28.1-.37.35-.3.18.05 1.31.37 2.52.72zm-30.27 7.3c1.61.53 3.48 1.24 4.17 1.59 1.25.63 1.26.64.9 1.03-.64.71-7.63 7.22-7.83 7.29-.1.04-.18-.95-.18-2.38-.01-2.48-.29-6.95-.5-7.95-.16-.73-.03-.72 3.44.42zm44.7 1.29c-1.54 2.54-4.07 6.16-5.9 8.44-1.87 2.34-5.82 6.74-6.05 6.74-.09 0-.66-.71-1.27-1.59-2.25-3.21-4.86-5.99-7.15-7.61-.22-.15-.35-.32-.3-.37.05-.05 3.81-1.43 8.33-3.07 9.16-3.32 13.19-4.67 13.44-4.49.02.03-.47.9-1.1 1.95zm5.73-.43c6.32 4.41 10.62 7.98 12.18 10.11.39.54.68 1 .64 1.03-.04.03-2.07.26-4.53.5-9.81.97-16.8 1.95-20.5 2.89-.99.25-1.82.44-1.83.43-.02-.02.63-.82 1.46-1.81 4.28-5.13 8.14-10.47 9.58-13.24.38-.73.75-1.33.83-1.33.07-.01 1.04.63 2.17 1.42zm-35.43 5.47c1.21.65 2.14 1.25 2.09 1.35-.09.18-10.76 6.02-10.85 5.94-.02-.02.53-1.77 1.23-3.91s1.38-4.46 1.51-5.17l.24-1.3 1.8.96c1 .53 2.77 1.48 3.98 2.13zm-8.93.34c-1.03 3.57-3.12 8.17-4.07 8.97-.22.18-.65-.07-2.06-1.21-.99-.8-2-1.59-2.27-1.77-.26-.18-.45-.37-.41-.42.73-.73 9.23-7.58 9.27-7.47.03.07-.18.93-.46 1.9zm19.32 6.21c1.61 1.07 5.17 4.26 4.98 4.46-.05.05-3.67 1.23-8.03 2.6-4.36 1.38-9.22 2.94-10.8 3.47-1.59.53-2.89.95-2.9.93-.02-.02 1.09-1.28 2.46-2.81 3.57-3.98 7.24-8.25 8.54-9.93l1.12-1.45 1.47.79c.79.44 2.23 1.32 3.16 1.94zm-8.26-2.29c-.1.13-1.06 1.35-2.14 2.72-1.08 1.36-3.66 4.68-5.76 7.37l-3.81 4.9-.13-.83c-.24-1.61-1.1-4.74-1.59-5.81l-.49-1.07 2.42-1.21c2.5-1.25 7.71-4.08 10.15-5.5 1.54-.9 1.64-.94 1.35-.57zm-20.21 5.92c.99.51 1.92 1.17 1.92 1.38 0 .32-6.45 5.3-6.62 5.11-.04-.04.54-1.19 1.29-2.56.76-1.37 1.52-2.9 1.7-3.42.18-.52.46-.94.6-.94.16 0 .66.2 1.11.43zm5.5 6.13c.45.87.91 3.32.67 3.54-.1.09-2.76 1.35-5.93 2.8-3.17 1.45-7.28 3.4-9.17 4.34-1.88.94-3.31 1.6-3.17 1.48.14-.13 2.21-1.86 4.61-3.86 4.64-3.86 9.93-8.47 10.9-9.49l.58-.61.57.55c.32.3.74.86.94 1.25zm-5.21-.05c-.46.41-2.94 2.58-5.5 4.8C42.08 67 39 69.68 37.8 70.73c-2.42 2.11-2.42 2.11.67-1.92 2.39-3.12 3.64-4.28 7.07-6.58 1.67-1.12 4.99-2.99 5.31-2.99.07-.01-.25.34-.71.75zm24.03 2.12c.13.65.28 2.69.35 4.51l.12 3.32-.77-.36c-2.66-1.23-10.13-5.44-9.85-5.55 1.63-.65 9.7-3.33 9.79-3.24.07.07.23.66.36 1.32zm-6.34 5.94c3.11 1.83 5.68 3.35 5.72 3.38.04.03-.37.37-.88.75-.99.73-11.54 6.18-11.68 6.04-.04-.04.1-.95.31-2 .43-2.12.82-8.44.63-10.45-.06-.71-.04-1.21.06-1.15.11.06 2.73 1.6 5.84 3.43zm-8.6-1.34c.24 1.97-.05 5.93-.58 7.99-.63 2.42-.99 3.43-1.26 3.52-.37.13-2.67-1.97-4.08-3.72-1.42-1.76-3.28-5.08-3-5.35.17-.16 8.39-3.55 8.64-3.56.08-.01.21.5.28 1.12zm-10.08 4.95c.87 1.8 2.86 4.4 5.04 6.6 1.4 1.41 1.75 1.87 1.53 2.01-.98.66-5.35 2.71-8.11 3.79-3.35 1.32-7.7 2.82-7.8 2.7-.04-.04.96-1.86 2.22-4.04 2.73-4.74 6.18-11.44 6.18-11.99 0-.7.29-.42.94.93zm-5.16.11c-.05.14-.47 1.18-.92 2.33-1.94 4.92-5.71 11.6-6.55 11.6-.65 0-1.61-3.89-1.88-7.63l-.14-1.88 4.61-2.33c2.54-1.28 4.69-2.33 4.8-2.33.09-.01.13.1.08.24zm30.78 4.55c.02 2.83-1.17 9.68-1.8 10.37-.26.29-3.19-.79-5.82-2.15-2.36-1.22-6.24-3.63-6.24-3.87 0-.07.59-.37 1.33-.68 1.4-.59 7.91-4.07 10.67-5.7l1.59-.94.14.72c.05.39.12 1.42.13 2.25zm-43.43 3.27c.27 2.24.96 4.98 1.82 7.16.35.89.6 1.66.56 1.7-.34.31-14.19 4.12-16.02 4.41l-.87.14.13-.67c.19-.95 1.53-3.69 2.53-5.17 1.24-1.84 4.31-4.92 6.34-6.35 1.51-1.07 5.15-3.19 5.26-3.07.01.01.13.84.25 1.85zm31.42 4.72c4.28 2.05 5.9 2.76 7.95 3.47l1.57.54-.99.5c-5.61 2.84-15.53 6.89-18.1 7.39-.57.11-.65.08-.54-.2.44-1.15 6.36-13.38 6.47-13.38.07-.01 1.72.76 3.64 1.68zm-7.53-.46c-.3 1.44-1.93 6.11-2.88 8.23-.82 1.84-2.72 5.43-3.06 5.77-.15.15-3.53-1.76-5.13-2.9-1.8-1.28-5.74-5.08-5.63-5.43.04-.13 2.44-1.05 5.33-2.05 6.09-2.1 9.5-3.37 10.49-3.88.96-.5 1.04-.47.88.26zm17.03 6.45c-.06.42-.4 2.26-.77 4.12-1.16 5.83-2.57 9.81-3.47 9.81-1.24 0-9.73-2.06-12.47-3.03-1.86-.66-3.47-1.41-4-1.88-.33-.29-.16-.39 2.28-1.39 7.85-3.2 16.9-7.28 17.88-8.06.57-.45.66-.39.55.43zm-39.72 1.78c-.89 1.59-2.72 4.22-6.2 8.92l-2.97 4-.89-.64c-1.25-.89-3.23-3.05-4.06-4.42-.89-1.47-1.5-3.28-1.57-4.66l-.06-1.07 1.47-.15c1.99-.2 7.55-1.35 11.52-2.39 1.8-.47 3.3-.83 3.34-.8.03.04-.23.58-.58 1.21zm8.63 4.11c.99.71 2.35 1.61 3.05 2.02l1.27.74-.57.24c-.32.13-4.93 1.81-10.26 3.74-9.1 3.29-9.7 3.48-9.95 3.14-.15-.2-.25-.41-.23-.48.02-.07 2.48-3.24 5.47-7.07l5.43-6.95 2 1.67c1.12.93 2.8 2.24 3.79 2.95zm2.24 10.45c-1.99 2.97-3.67 5.48-3.73 5.56-.15.2-3.33-.55-5.71-1.34-2.5-.84-5.58-2.4-6.78-3.43l-.87-.75 1.96-.53c8.03-2.19 18.65-5 18.7-4.96.04.01-1.58 2.48-3.57 5.45zm9.56-4.5c4.25 1.46 8.13 2.29 13.16 2.83l1.39.15-3.75 1.35c-9.36 3.38-16.94 5.75-20.76 6.49-1.07.21-2.05.38-2.16.38-.11 0 .66-1.05 1.71-2.32 2.86-3.49 5.96-7.46 6.78-8.68.4-.59.8-1.09.89-1.09.09.01 1.31.4 2.74.89zm13.95 7.88c-1.61 4.16-2.79 6.69-3.21 6.85-.8.31-11.85-1.32-15.22-2.23-2.24-.61-3.67-1.2-3.25-1.35.16-.06 1.76-.43 3.57-.84 5.85-1.32 14.77-4.03 18.46-5.61.48-.2.9-.35.93-.32.02.03-.55 1.6-1.28 3.5z"/></svg>
+                <div class="tech mysql">
+                  <div class="tech-logo-cont">
+                    <svg
+                      fill="#000000"
+                      width="70px"
+                      height="70px"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m24.129 23.412-.508-.484c-.251-.331-.518-.624-.809-.891l-.005-.004q-.448-.407-.931-.774-.387-.266-1.064-.641c-.371-.167-.661-.46-.818-.824l-.004-.01-.048-.024c.212-.021.406-.06.592-.115l-.023.006.57-.157c.236-.074.509-.122.792-.133h.006c.298-.012.579-.06.847-.139l-.025.006q.194-.048.399-.109t.351-.109v-.169q-.145-.217-.351-.496c-.131-.178-.278-.333-.443-.468l-.005-.004q-.629-.556-1.303-1.076c-.396-.309-.845-.624-1.311-.916l-.068-.04c-.246-.162-.528-.312-.825-.435l-.034-.012q-.448-.182-.883-.399c-.097-.048-.21-.09-.327-.119l-.011-.002c-.117-.024-.217-.084-.29-.169l-.001-.001c-.138-.182-.259-.389-.355-.609l-.008-.02q-.145-.339-.314-.651-.363-.702-.702-1.427t-.651-1.452q-.217-.484-.399-.967c-.134-.354-.285-.657-.461-.942l.013.023c-.432-.736-.863-1.364-1.331-1.961l.028.038c-.463-.584-.943-1.106-1.459-1.59l-.008-.007c-.509-.478-1.057-.934-1.632-1.356l-.049-.035q-.896-.651-1.96-1.282c-.285-.168-.616-.305-.965-.393l-.026-.006-1.113-.278-.629-.048q-.314-.024-.629-.024c-.148-.078-.275-.171-.387-.279-.11-.105-.229-.204-.353-.295l-.01-.007c-.605-.353-1.308-.676-2.043-.93l-.085-.026c-.193-.113-.425-.179-.672-.179-.176 0-.345.034-.499.095l.009-.003c-.38.151-.67.458-.795.84l-.003.01c-.073.172-.115.371-.115.581 0 .368.13.705.347.968l-.002-.003q.544.725.834 1.14.217.291.448.605c.141.188.266.403.367.63l.008.021c.056.119.105.261.141.407l.003.016q.048.206.121.448.217.556.411 1.14c.141.425.297.785.478 1.128l-.019-.04q.145.266.291.52t.314.496c.065.098.147.179.241.242l.003.002c.099.072.164.185.169.313v.001c-.114.168-.191.369-.217.586l-.001.006c-.035.253-.085.478-.153.695l.008-.03c-.223.666-.351 1.434-.351 2.231 0 .258.013.512.04.763l-.003-.031c.06.958.349 1.838.812 2.6l-.014-.025c.197.295.408.552.641.787.168.188.412.306.684.306.152 0 .296-.037.422-.103l-.005.002c.35-.126.599-.446.617-.827v-.002c.048-.474.12-.898.219-1.312l-.013.067c.024-.063.038-.135.038-.211 0-.015-.001-.03-.002-.045v.002q-.012-.109.133-.206v.048q.145.339.302.677t.326.677c.295.449.608.841.952 1.202l-.003-.003c.345.372.721.706 1.127 1.001l.022.015c.212.162.398.337.566.528l.004.004c.158.186.347.339.56.454l.01.005v-.024h.048c-.039-.087-.102-.157-.18-.205l-.002-.001c-.079-.044-.147-.088-.211-.136l.005.003q-.217-.217-.448-.484t-.423-.508q-.508-.702-.969-1.467t-.871-1.555q-.194-.387-.375-.798t-.351-.798c-.049-.099-.083-.213-.096-.334v-.005c-.006-.115-.072-.214-.168-.265l-.002-.001c-.121.206-.255.384-.408.545l.001-.001c-.159.167-.289.364-.382.58l-.005.013c-.141.342-.244.739-.289 1.154l-.002.019q-.072.641-.145 1.318l-.048.024-.024.024c-.26-.053-.474-.219-.59-.443l-.002-.005q-.182-.351-.326-.69c-.248-.637-.402-1.374-.423-2.144v-.009c-.009-.122-.013-.265-.013-.408 0-.666.105-1.308.299-1.91l-.012.044q.072-.266.314-.896t.097-.871c-.05-.165-.143-.304-.265-.41l-.001-.001c-.122-.106-.233-.217-.335-.335l-.003-.004q-.169-.244-.326-.52t-.278-.544c-.165-.382-.334-.861-.474-1.353l-.022-.089c-.159-.565-.336-1.043-.546-1.503l.026.064c-.111-.252-.24-.47-.39-.669l.006.008q-.244-.326-.436-.617-.244-.314-.484-.605c-.163-.197-.308-.419-.426-.657l-.009-.02c-.048-.097-.09-.21-.119-.327l-.002-.011c-.011-.035-.017-.076-.017-.117 0-.082.024-.159.066-.223l-.001.002c.011-.056.037-.105.073-.145.039-.035.089-.061.143-.072h.002c.085-.055.188-.088.3-.088.084 0 .165.019.236.053l-.003-.001c.219.062.396.124.569.195l-.036-.013q.459.194.847.375c.298.142.552.292.792.459l-.018-.012q.194.121.387.266t.411.291h.339q.387 0 .822.037c.293.023.564.078.822.164l-.024-.007c.481.143.894.312 1.286.515l-.041-.019q.593.302 1.125.641c.589.367 1.098.743 1.577 1.154l-.017-.014c.5.428.954.867 1.38 1.331l.01.012c.416.454.813.947 1.176 1.464l.031.047c.334.472.671 1.018.974 1.584l.042.085c.081.154.163.343.234.536l.011.033q.097.278.217.57.266.605.57 1.221t.57 1.198l.532 1.161c.187.406.396.756.639 1.079l-.011-.015c.203.217.474.369.778.422l.008.001c.368.092.678.196.978.319l-.047-.017c.143.065.327.134.516.195l.04.011c.212.065.396.151.565.259l-.009-.005c.327.183.604.363.868.559l-.021-.015q.411.302.822.57.194.145.651.423t.484.52c-.114-.004-.249-.007-.384-.007-.492 0-.976.032-1.45.094l.056-.006c-.536.072-1.022.203-1.479.39l.04-.014c-.113.049-.248.094-.388.129l-.019.004c-.142.021-.252.135-.266.277v.001c.061.076.11.164.143.26l.002.006c.034.102.075.19.125.272l-.003-.006c.119.211.247.393.391.561l-.004-.005c.141.174.3.325.476.454l.007.005q.244.194.508.399c.161.126.343.25.532.362l.024.013c.284.174.614.34.958.479l.046.016c.374.15.695.324.993.531l-.016-.011q.291.169.58.375t.556.399c.073.072.137.152.191.239l.003.005c.091.104.217.175.36.193h.003v-.048c-.088-.067-.153-.16-.184-.267l-.001-.004c-.025-.102-.062-.191-.112-.273l.002.004zm-18.576-19.205q-.194 0-.363.012c-.115.008-.222.029-.323.063l.009-.003v.024h.048q.097.145.244.326t.266.351l.387.798.048-.024c.113-.082.2-.192.252-.321l.002-.005c.052-.139.082-.301.082-.469 0-.018 0-.036-.001-.054v.003c-.045-.044-.082-.096-.108-.154l-.001-.003-.081-.182c-.053-.084-.127-.15-.214-.192l-.003-.001c-.094-.045-.174-.102-.244-.169z"
+                      />
+                    </svg>
+                  </div>
+                  <span>MySQL</span>
                 </div>
-              <span>MS SQL Server</span>
-              </div>
-              <div class="tech xampp">
-                <div class="tech-logo-cont">
-                  <svg fill="#000000" width="70px" height="70px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>XAMPP icon</title><path d="M16.792,11.923c0.113,0.043,0.226,0.079,0.334,0.128c0.45,0.203,0.715,0.553,0.748,1.044 c0.041,0.634,0.044,1.271,0.002,1.905c-0.049,0.732-0.725,1.292-1.483,1.271c-0.735-0.021-1.369-0.62-1.397-1.341 c-0.017-0.441-0.003-0.884-0.006-1.326c-0.001-0.239-0.003-0.242-0.245-0.243c-1.363-0.001-2.726,0.008-4.089-0.003 c-0.888-0.007-1.421,0.482-1.471,1.46c-0.019,0.38-0.1,0.727-0.357,1.018c-0.397,0.451-0.898,0.601-1.472,0.466 c-0.554-0.131-0.867-0.522-1.035-1.048c-0.117-0.367-0.056-0.737,0.012-1.094c0.341-1.797,1.366-3.006,3.125-3.555 c0.357-0.112,0.731-0.166,1.105-0.166c0.94,0.001,1.881,0.001,2.821-0.001c0.128,0,0.257-0.012,0.385-0.021 c0.702-0.051,1.166-0.511,1.22-1.352c0.004-0.064,0-0.129,0.001-0.193c0.011-0.788,0.605-1.396,1.393-1.425 c0.787-0.029,1.438,0.527,1.493,1.318c0.076,1.083-0.265,2.046-0.913,2.907C16.903,11.751,16.819,11.816,16.792,11.923z M8.249,10.436c-0.258-0.008-0.571,0.018-0.882-0.035c-0.536-0.09-0.876-0.39-1.02-0.916C6.19,8.912,6.25,8.388,6.698,7.96 C7.154,7.526,7.694,7.4,8.285,7.645c0.52,0.216,0.859,0.731,0.89,1.293C9.2,9.382,9.178,9.828,9.182,10.272 c0.001,0.116-0.043,0.167-0.161,0.165C8.781,10.434,8.542,10.436,8.249,10.436z M21.682,0H2.318C1.102,0,0.116,0.986,0.116,2.202 v19.317c0,1.37,1.111,2.481,2.481,2.481h18.807c1.37,0,2.481-1.111,2.481-2.481V2.202C23.884,0.986,22.898,0,21.682,0z M20.125,12.473c0.519,0.804,0.733,1.69,0.677,2.657c-0.108,1.886-1.413,3.474-3.25,3.916c-2.585,0.623-4.566-0.923-5.233-2.794 c-0.109-0.304-0.16-0.622-0.224-0.985c-0.068,0.414-0.115,0.789-0.264,1.134c-0.697,1.617-1.884,2.603-3.665,2.799 c-2.104,0.232-4.048-1.067-4.632-3.084c-0.25-0.863-0.175-1.747-0.068-2.625c0.08-0.653,0.321-1.268,0.632-1.848 c0.057-0.106,0.057-0.184-0.01-0.285c-0.561-0.845-0.779-1.777-0.7-2.784C3.43,8.035,3.56,7.52,3.805,7.038 C4.52,5.626,6.09,4.427,8.193,4.626c1.849,0.175,3.562,1.77,3.83,3.564c0.013,0.09,0.039,0.178,0.068,0.311 c0.044-0.241,0.076-0.439,0.118-0.636c0.344-1.63,1.94-3.335,4.201-3.357c2.292-0.021,3.99,1.776,4.31,3.446 c0.17,0.888,0.089,1.776-0.103,2.663c-0.112,0.517-0.31,1.008-0.524,1.492C20.034,12.245,20.043,12.345,20.125,12.473z"/></svg>
+                <div class="tech sqlserver">
+                  <div class="tech-logo-cont">
+                    <svg
+                      width="70px"
+                      height="70px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 128 128"
+                    >
+                      <path
+                        d="M55.25 4.15c-.33.11-2.1.68-3.96 1.29-10 3.27-17.08 7.06-18.84 10.06-.67 1.15-.8 2.08-.4 3.01.44 1.05 1.25 1.84 3.47 3.41 1.04.73 2.81 2.26 3.96 3.41 5.5 5.49 8.17 12.22 7.87 19.83-.34 8.56-4.35 17.12-12.03 25.69-2.68 2.99-5.43 5.48-10.71 9.71-4.4 3.52-6.79 5.8-8.42 8.01-4.99 6.8-3.66 12.86 3.96 17.92 6.72 4.47 18.56 8.19 32.51 10.21 4.68.68 9.97 1.11 11.24.92l.89-.13 1.4-2.52c7.08-12.75 10.66-24.77 11.09-37.21.19-5.55-.51-12.12-1.7-15.96-.22-.69-.38-1.28-.35-1.3.02-.02 2-.61 4.4-1.33 12.61-3.76 24.81-6.72 34.89-8.47 1.96-.34 3.64-.69 3.73-.78.54-.53-1.03-2.98-3.58-5.61-9.43-9.73-26.09-17.14-45.64-20.29-3.77-.61-4.23-.83-5.63-2.68-2.22-2.94-4.31-7.97-7.16-17.17-.09-.28-.18-.28-.99-.02zm1.3 3.46c1.1 2.99 1.77 5.34 1.77 6.17v.65l-.93-.11c-5.04-.58-13.08-1.83-14.79-2.29-.44-.12-.69-.29-.61-.42.13-.21 1.84-1.03 6.92-3.34 4.74-2.15 6.54-2.95 6.68-2.96.06 0 .49 1.03.96 2.3zm-10.66 6.31c6.15 1.29 10.63 2.1 11.62 2.1.96 0 .85.08-3.67 2.84-3.49 2.12-3.89 2.32-4.77 2.32h-.96l-2.58-2.62c-3.13-3.17-5.25-5.49-5.25-5.75 0-.11.06-.14.15-.09.08.04 2.55.59 5.46 1.2zm-4.54 2.91c1.51 1.76 2.68 3.24 2.62 3.31-.13.13-4.44-.94-7.08-1.75-2.3-.71-2.58-.95-1.97-1.73.4-.52 3.37-3 3.59-3.01.06-.01 1.33 1.41 2.84 3.18zm19.62 3.65c.6 1.43 1.06 2.59 1.04 2.61-.03.02-8.11-1.23-8.82-1.37-.15-.03 1.22-.96 3.06-2.08s3.41-1.97 3.49-1.88c.08.07.63 1.29 1.23 2.72zm-17.62 2.71c.16.16 2.09 6.36 2 6.44-.03.03-.95-1.03-2.04-2.38-1.1-1.35-2.75-3.24-3.7-4.23l-1.71-1.79 2.67.92c1.46.51 2.72.98 2.78 1.04zm7.72.83c3.35.48 6.13.91 6.18.96.04.05-1.98 1.62-4.5 3.5-2.52 1.87-4.6 3.38-4.63 3.35-.03-.03-.28-.81-.56-1.74-.28-.93-1-2.86-1.59-4.31-.59-1.45-1.05-2.63-1.03-2.63.02 0 2.78.4 6.13.87zm8.42 2.68c.74 1.73 1.03 3.39 1.15 6.7.06 1.78.07 3.23.01 3.23-.06 0-1.12-.37-2.35-.81-2.46-.89-7.28-2.48-7.85-2.59-.25-.05.91-1.16 3.96-3.79 2.38-2.05 4.4-3.72 4.49-3.72.1.01.36.45.59.98zm8.64.42c3.71.76 6.95 1.44 7.21 1.5.37.09-.52.65-4.44 2.8-2.7 1.48-5.76 3.16-6.8 3.75-1.05.59-1.91 1.04-1.93 1.02-.02-.02.09-.57.24-1.23.56-2.4.21-5.4-.91-7.79-.33-.69-.6-1.3-.6-1.35 0-.17.67-.05 7.23 1.3zm10.11 4.53c-.19.84-.6 2.27-.93 3.2-.71 2.04-3.3 7.33-3.65 7.47-.14.06-1.36-.51-2.69-1.25-1.33-.74-3.26-1.72-4.27-2.17l-1.84-.82 6.79-4.35c5.63-3.61 6.8-4.29 6.86-3.97.04.2-.08 1.05-.27 1.89zm4.96-1.55c7.04 2.02 14.47 4.75 14.04 5.16-.09.08-1.01.39-2.04.68-5.31 1.51-12.7 4.06-16.16 5.58-1.07.47-2 .82-2.05.77-.05-.05.37-1.61.94-3.45 1.11-3.63 2.4-8.53 2.4-9.16 0-.28.1-.37.35-.3.18.05 1.31.37 2.52.72zm-30.27 7.3c1.61.53 3.48 1.24 4.17 1.59 1.25.63 1.26.64.9 1.03-.64.71-7.63 7.22-7.83 7.29-.1.04-.18-.95-.18-2.38-.01-2.48-.29-6.95-.5-7.95-.16-.73-.03-.72 3.44.42zm44.7 1.29c-1.54 2.54-4.07 6.16-5.9 8.44-1.87 2.34-5.82 6.74-6.05 6.74-.09 0-.66-.71-1.27-1.59-2.25-3.21-4.86-5.99-7.15-7.61-.22-.15-.35-.32-.3-.37.05-.05 3.81-1.43 8.33-3.07 9.16-3.32 13.19-4.67 13.44-4.49.02.03-.47.9-1.1 1.95zm5.73-.43c6.32 4.41 10.62 7.98 12.18 10.11.39.54.68 1 .64 1.03-.04.03-2.07.26-4.53.5-9.81.97-16.8 1.95-20.5 2.89-.99.25-1.82.44-1.83.43-.02-.02.63-.82 1.46-1.81 4.28-5.13 8.14-10.47 9.58-13.24.38-.73.75-1.33.83-1.33.07-.01 1.04.63 2.17 1.42zm-35.43 5.47c1.21.65 2.14 1.25 2.09 1.35-.09.18-10.76 6.02-10.85 5.94-.02-.02.53-1.77 1.23-3.91s1.38-4.46 1.51-5.17l.24-1.3 1.8.96c1 .53 2.77 1.48 3.98 2.13zm-8.93.34c-1.03 3.57-3.12 8.17-4.07 8.97-.22.18-.65-.07-2.06-1.21-.99-.8-2-1.59-2.27-1.77-.26-.18-.45-.37-.41-.42.73-.73 9.23-7.58 9.27-7.47.03.07-.18.93-.46 1.9zm19.32 6.21c1.61 1.07 5.17 4.26 4.98 4.46-.05.05-3.67 1.23-8.03 2.6-4.36 1.38-9.22 2.94-10.8 3.47-1.59.53-2.89.95-2.9.93-.02-.02 1.09-1.28 2.46-2.81 3.57-3.98 7.24-8.25 8.54-9.93l1.12-1.45 1.47.79c.79.44 2.23 1.32 3.16 1.94zm-8.26-2.29c-.1.13-1.06 1.35-2.14 2.72-1.08 1.36-3.66 4.68-5.76 7.37l-3.81 4.9-.13-.83c-.24-1.61-1.1-4.74-1.59-5.81l-.49-1.07 2.42-1.21c2.5-1.25 7.71-4.08 10.15-5.5 1.54-.9 1.64-.94 1.35-.57zm-20.21 5.92c.99.51 1.92 1.17 1.92 1.38 0 .32-6.45 5.3-6.62 5.11-.04-.04.54-1.19 1.29-2.56.76-1.37 1.52-2.9 1.7-3.42.18-.52.46-.94.6-.94.16 0 .66.2 1.11.43zm5.5 6.13c.45.87.91 3.32.67 3.54-.1.09-2.76 1.35-5.93 2.8-3.17 1.45-7.28 3.4-9.17 4.34-1.88.94-3.31 1.6-3.17 1.48.14-.13 2.21-1.86 4.61-3.86 4.64-3.86 9.93-8.47 10.9-9.49l.58-.61.57.55c.32.3.74.86.94 1.25zm-5.21-.05c-.46.41-2.94 2.58-5.5 4.8C42.08 67 39 69.68 37.8 70.73c-2.42 2.11-2.42 2.11.67-1.92 2.39-3.12 3.64-4.28 7.07-6.58 1.67-1.12 4.99-2.99 5.31-2.99.07-.01-.25.34-.71.75zm24.03 2.12c.13.65.28 2.69.35 4.51l.12 3.32-.77-.36c-2.66-1.23-10.13-5.44-9.85-5.55 1.63-.65 9.7-3.33 9.79-3.24.07.07.23.66.36 1.32zm-6.34 5.94c3.11 1.83 5.68 3.35 5.72 3.38.04.03-.37.37-.88.75-.99.73-11.54 6.18-11.68 6.04-.04-.04.1-.95.31-2 .43-2.12.82-8.44.63-10.45-.06-.71-.04-1.21.06-1.15.11.06 2.73 1.6 5.84 3.43zm-8.6-1.34c.24 1.97-.05 5.93-.58 7.99-.63 2.42-.99 3.43-1.26 3.52-.37.13-2.67-1.97-4.08-3.72-1.42-1.76-3.28-5.08-3-5.35.17-.16 8.39-3.55 8.64-3.56.08-.01.21.5.28 1.12zm-10.08 4.95c.87 1.8 2.86 4.4 5.04 6.6 1.4 1.41 1.75 1.87 1.53 2.01-.98.66-5.35 2.71-8.11 3.79-3.35 1.32-7.7 2.82-7.8 2.7-.04-.04.96-1.86 2.22-4.04 2.73-4.74 6.18-11.44 6.18-11.99 0-.7.29-.42.94.93zm-5.16.11c-.05.14-.47 1.18-.92 2.33-1.94 4.92-5.71 11.6-6.55 11.6-.65 0-1.61-3.89-1.88-7.63l-.14-1.88 4.61-2.33c2.54-1.28 4.69-2.33 4.8-2.33.09-.01.13.1.08.24zm30.78 4.55c.02 2.83-1.17 9.68-1.8 10.37-.26.29-3.19-.79-5.82-2.15-2.36-1.22-6.24-3.63-6.24-3.87 0-.07.59-.37 1.33-.68 1.4-.59 7.91-4.07 10.67-5.7l1.59-.94.14.72c.05.39.12 1.42.13 2.25zm-43.43 3.27c.27 2.24.96 4.98 1.82 7.16.35.89.6 1.66.56 1.7-.34.31-14.19 4.12-16.02 4.41l-.87.14.13-.67c.19-.95 1.53-3.69 2.53-5.17 1.24-1.84 4.31-4.92 6.34-6.35 1.51-1.07 5.15-3.19 5.26-3.07.01.01.13.84.25 1.85zm31.42 4.72c4.28 2.05 5.9 2.76 7.95 3.47l1.57.54-.99.5c-5.61 2.84-15.53 6.89-18.1 7.39-.57.11-.65.08-.54-.2.44-1.15 6.36-13.38 6.47-13.38.07-.01 1.72.76 3.64 1.68zm-7.53-.46c-.3 1.44-1.93 6.11-2.88 8.23-.82 1.84-2.72 5.43-3.06 5.77-.15.15-3.53-1.76-5.13-2.9-1.8-1.28-5.74-5.08-5.63-5.43.04-.13 2.44-1.05 5.33-2.05 6.09-2.1 9.5-3.37 10.49-3.88.96-.5 1.04-.47.88.26zm17.03 6.45c-.06.42-.4 2.26-.77 4.12-1.16 5.83-2.57 9.81-3.47 9.81-1.24 0-9.73-2.06-12.47-3.03-1.86-.66-3.47-1.41-4-1.88-.33-.29-.16-.39 2.28-1.39 7.85-3.2 16.9-7.28 17.88-8.06.57-.45.66-.39.55.43zm-39.72 1.78c-.89 1.59-2.72 4.22-6.2 8.92l-2.97 4-.89-.64c-1.25-.89-3.23-3.05-4.06-4.42-.89-1.47-1.5-3.28-1.57-4.66l-.06-1.07 1.47-.15c1.99-.2 7.55-1.35 11.52-2.39 1.8-.47 3.3-.83 3.34-.8.03.04-.23.58-.58 1.21zm8.63 4.11c.99.71 2.35 1.61 3.05 2.02l1.27.74-.57.24c-.32.13-4.93 1.81-10.26 3.74-9.1 3.29-9.7 3.48-9.95 3.14-.15-.2-.25-.41-.23-.48.02-.07 2.48-3.24 5.47-7.07l5.43-6.95 2 1.67c1.12.93 2.8 2.24 3.79 2.95zm2.24 10.45c-1.99 2.97-3.67 5.48-3.73 5.56-.15.2-3.33-.55-5.71-1.34-2.5-.84-5.58-2.4-6.78-3.43l-.87-.75 1.96-.53c8.03-2.19 18.65-5 18.7-4.96.04.01-1.58 2.48-3.57 5.45zm9.56-4.5c4.25 1.46 8.13 2.29 13.16 2.83l1.39.15-3.75 1.35c-9.36 3.38-16.94 5.75-20.76 6.49-1.07.21-2.05.38-2.16.38-.11 0 .66-1.05 1.71-2.32 2.86-3.49 5.96-7.46 6.78-8.68.4-.59.8-1.09.89-1.09.09.01 1.31.4 2.74.89zm13.95 7.88c-1.61 4.16-2.79 6.69-3.21 6.85-.8.31-11.85-1.32-15.22-2.23-2.24-.61-3.67-1.2-3.25-1.35.16-.06 1.76-.43 3.57-.84 5.85-1.32 14.77-4.03 18.46-5.61.48-.2.9-.35.93-.32.02.03-.55 1.6-1.28 3.5z"
+                      />
+                    </svg>
+                  </div>
+                  <span>MS SQL Server</span>
                 </div>
-                <span>XAMPP</span>
-              </div>
-              <div class="tech figma">
-                <div class="tech-logo-cont">
-                  <svg width="70px" height="70px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 3H9C7.34315 3 6 4.34315 6 6C6 7.65685 7.34315 9 9 9M12 3V9M12 3H15C16.6569 3 18 4.34315 18 6C18 7.65685 16.6569 9 15 9M12 9H9M12 9H15M12 9V15M9 9C7.34315 9 6 10.3431 6 12C6 13.6569 7.34315 15 9 15M15 9C16.6569 9 18 10.3431 18 12C18 13.6569 16.6569 15 15 15C13.3431 15 12 13.6569 12 12C12 10.3431 13.3431 9 15 9ZM12 15H9M12 15V18C12 19.6569 10.6569 21 9 21C7.34315 21 6 19.6569 6 18C6 16.3431 7.34315 15 9 15" stroke="#FFD369" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <div class="tech xampp">
+                  <div class="tech-logo-cont">
+                    <svg
+                      fill="#000000"
+                      width="70px"
+                      height="70px"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>XAMPP icon</title>
+                      <path
+                        d="M16.792,11.923c0.113,0.043,0.226,0.079,0.334,0.128c0.45,0.203,0.715,0.553,0.748,1.044 c0.041,0.634,0.044,1.271,0.002,1.905c-0.049,0.732-0.725,1.292-1.483,1.271c-0.735-0.021-1.369-0.62-1.397-1.341 c-0.017-0.441-0.003-0.884-0.006-1.326c-0.001-0.239-0.003-0.242-0.245-0.243c-1.363-0.001-2.726,0.008-4.089-0.003 c-0.888-0.007-1.421,0.482-1.471,1.46c-0.019,0.38-0.1,0.727-0.357,1.018c-0.397,0.451-0.898,0.601-1.472,0.466 c-0.554-0.131-0.867-0.522-1.035-1.048c-0.117-0.367-0.056-0.737,0.012-1.094c0.341-1.797,1.366-3.006,3.125-3.555 c0.357-0.112,0.731-0.166,1.105-0.166c0.94,0.001,1.881,0.001,2.821-0.001c0.128,0,0.257-0.012,0.385-0.021 c0.702-0.051,1.166-0.511,1.22-1.352c0.004-0.064,0-0.129,0.001-0.193c0.011-0.788,0.605-1.396,1.393-1.425 c0.787-0.029,1.438,0.527,1.493,1.318c0.076,1.083-0.265,2.046-0.913,2.907C16.903,11.751,16.819,11.816,16.792,11.923z M8.249,10.436c-0.258-0.008-0.571,0.018-0.882-0.035c-0.536-0.09-0.876-0.39-1.02-0.916C6.19,8.912,6.25,8.388,6.698,7.96 C7.154,7.526,7.694,7.4,8.285,7.645c0.52,0.216,0.859,0.731,0.89,1.293C9.2,9.382,9.178,9.828,9.182,10.272 c0.001,0.116-0.043,0.167-0.161,0.165C8.781,10.434,8.542,10.436,8.249,10.436z M21.682,0H2.318C1.102,0,0.116,0.986,0.116,2.202 v19.317c0,1.37,1.111,2.481,2.481,2.481h18.807c1.37,0,2.481-1.111,2.481-2.481V2.202C23.884,0.986,22.898,0,21.682,0z M20.125,12.473c0.519,0.804,0.733,1.69,0.677,2.657c-0.108,1.886-1.413,3.474-3.25,3.916c-2.585,0.623-4.566-0.923-5.233-2.794 c-0.109-0.304-0.16-0.622-0.224-0.985c-0.068,0.414-0.115,0.789-0.264,1.134c-0.697,1.617-1.884,2.603-3.665,2.799 c-2.104,0.232-4.048-1.067-4.632-3.084c-0.25-0.863-0.175-1.747-0.068-2.625c0.08-0.653,0.321-1.268,0.632-1.848 c0.057-0.106,0.057-0.184-0.01-0.285c-0.561-0.845-0.779-1.777-0.7-2.784C3.43,8.035,3.56,7.52,3.805,7.038 C4.52,5.626,6.09,4.427,8.193,4.626c1.849,0.175,3.562,1.77,3.83,3.564c0.013,0.09,0.039,0.178,0.068,0.311 c0.044-0.241,0.076-0.439,0.118-0.636c0.344-1.63,1.94-3.335,4.201-3.357c2.292-0.021,3.99,1.776,4.31,3.446 c0.17,0.888,0.089,1.776-0.103,2.663c-0.112,0.517-0.31,1.008-0.524,1.492C20.034,12.245,20.043,12.345,20.125,12.473z"
+                      />
+                    </svg>
+                  </div>
+                  <span>XAMPP</span>
                 </div>
-                <span>Figma</span>
+                <div class="tech figma">
+                  <div class="tech-logo-cont">
+                    <svg
+                      width="70px"
+                      height="70px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 3H9C7.34315 3 6 4.34315 6 6C6 7.65685 7.34315 9 9 9M12 3V9M12 3H15C16.6569 3 18 4.34315 18 6C18 7.65685 16.6569 9 15 9M12 9H9M12 9H15M12 9V15M9 9C7.34315 9 6 10.3431 6 12C6 13.6569 7.34315 15 9 15M15 9C16.6569 9 18 10.3431 18 12C18 13.6569 16.6569 15 15 15C13.3431 15 12 13.6569 12 12C12 10.3431 13.3431 9 15 9ZM12 15H9M12 15V18C12 19.6569 10.6569 21 9 21C7.34315 21 6 19.6569 6 18C6 16.3431 7.34315 15 9 15"
+                        stroke="#FFD369"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <span>Figma</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="experience" class="about-sec">
-            <h2>Experience</h2>
-            <div class="experience-cont">
-
+            <div id="experience" class="about-sec">
+              <h2>Experience</h2>
+              <div class="experience-cont"></div>
             </div>
           </div>
-        </div>
-      </section>
-      <!--
+        </section>
+        <!--
         - #PROJECTS
-      -->
-      <section id="projects">
-        <div class="projects-cont">
-          <div class="section-header">
-            <h1>Projects</h1>
-            <hr>
-          </div>
-          <div class="projects">
-            <div class="filters">
-              <button class="filter-btn active" data-filter="all">All</button>
-              <button class="filter-btn" data-filter="desktop-application">Desktop Application</button>
-              <button class="filter-btn" data-filter="user-interface-design">User Interface Design</button>
-              <button class="filter-btn" data-filter="front-end-web-development">Front-End Web Development</button>
-              <button class="filter-btn" data-filter="database-design">Database Design</button>
+        -->
+        <section id="projects">
+          <div class="projects-cont">
+            <div class="section-header">
+              <h1>Projects</h1>
+              <hr />
             </div>
-            <div class="project-items">
-              <!--
-                - #ITEM -> musang forum
-              -->
-              <div class="project-item desktop-application active"
-                   data-description="Musang Forum is a live chat desktop application that me and my friends made during summer break. In the app, users can create forums, participate in open discussions, and engage with posts in real-time. Some features includes, user authentication, real-time chat, responsive UI, themes. This application was made with Java (JavaFX for front-end library), JavaFX CSS for styling, Java Sockets for real-time messaging (client-server architecture), and MySQL for the database engine."
-                   data-project-link="https://github.com/rainerat/musang-forum">
-                <div class="project-img-cont">
-                  <img src="assets/images/project-previews/musang-forum.png" alt="Musang Forum">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
+            <div class="projects">
+              <div class="filters">
+                <div class="filter-buttons">
+                  <button class="filter-btn active" data-filter="all">
+                    All
+                  </button>
+                  <button class="filter-btn" data-filter="desktop-application">
+                    Desktop Application
+                  </button>
+                  <button
+                    class="filter-btn"
+                    data-filter="user-interface-design"
+                  >
+                    User Interface Design
+                  </button>
+                  <button
+                    class="filter-btn"
+                    data-filter="front-end-web-development"
+                  >
+                    Front-End Web Development
+                  </button>
+                  <button class="filter-btn" data-filter="database-design">
+                    Database Design
+                  </button>
                 </div>
-                <div class="project-description-cont">
-                  <h3>Musang Forum</h3>
-                  <p>A JavaFX-based online forum application developed as a summer project.</p>
-                  <div class="tech-tags">
-                    <p class="tech-tag java">Java</p>
-                    <p class="tech-tag javafx">JavaFX</p>
-                    <p class="tech-tag mysql">MySQL</p>
+                <div class="filter-select">
+                  <select
+                    id="filter-dropdown"
+                    onchange="filterProjectsDropdown(this)"
+                  >
+                    <option value="all">All</option>
+                    <option value="desktop-application">
+                      Desktop Application
+                    </option>
+                    <option value="user-interface-design">
+                      User Interface Design
+                    </option>
+                    <option value="front-end-web-development">
+                      Front-End Web Development
+                    </option>
+                    <option value="database-design">Database Design</option>
+                  </select>
+                </div>
+              </div>
+              <div class="project-items">
+                <!--
+                - #ITEM -> musang forum
+                -->
+                <div
+                  class="project-item desktop-application active"
+                  data-project-id="musang-forum"
+                >
+                  <div class="project-img-cont">
+                    <img
+                      src="assets/images/project-previews/musang-forum-1.png"
+                      alt="Musang Forum"
+                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="project-description-cont">
+                    <h3>Musang Forum</h3>
+                    <p>
+                      A JavaFX-based online forum application developed as a
+                      summer project.
+                    </p>
+                    <div class="tech-tags">
+                      <p class="tech-tag java">Java</p>
+                      <p class="tech-tag javafx">JavaFX</p>
+                      <p class="tech-tag mysql">MySQL</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!--
+                <!--
                 - #ITEM -> hoohdie
               -->
-              <div class="project-item desktop-application active"
-                   data-description="Ho-ohdie is the name of the program that me and my team made for our Final Exam of Business Application Development. In short, hO-ohdie is a growing store that sells various high-quality hoodies. hO-ohdie wants to provide a better customer experience by making hO-ohdie available digitally. For this project, we were tasked to create an application to manage their products and transactions. The program was made using Java as its main programming language with JavaFX for the front-end library, and MySQL for the database engine."
-                   data-project-link="https://google.com">
-                <div class="project-img-cont">
-                  <img src="assets/images/project-previews/ho-ohdie.png" alt="Ho-ohdie">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
-                </div>
-                <div class="project-description-cont">
-                  <h3>Ho-ohdie</h3>
-                  <p>Desktop Application</p>
-                  <div class="tech-tags">
-                    <p class="tech-tag java">Java</p>
-                    <p class="tech-tag javafx">JavaFX</p>
-                    <p class="tech-tag mysql">MySQL</p>
+                <div
+                  class="project-item desktop-application active"
+                  data-project-id="ho-ohdie"
+                >
+                  <div class="project-img-cont">
+                    <img
+                      src="assets/images/project-previews/ho-ohdie.png"
+                      alt="Ho-ohdie"
+                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="project-description-cont">
+                    <h3>Ho-ohdie</h3>
+                    <p>
+                      A JavaFX based online store application for both Users and
+                      Admins
+                    </p>
+                    <div class="tech-tags">
+                      <p class="tech-tag java">Java</p>
+                      <p class="tech-tag javafx">JavaFX</p>
+                      <p class="tech-tag mysql">MySQL</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!--
+                <!--
                 - #ITEM -> Oildrop
               -->
-              <div class="project-item user-interface-design active"
-                   data-description="This is the project description."
-                   data-project-link="https://google.com">
-                <div class="project-img-cont">
-                  <img src="assets/images/project-previews/oildrop.png" alt="Musang Forum">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>
-                </div>
-                <div class="project-description-cont">
-                  <h3>Oildrop</h3>
-                  <p>User Interface Design</p>
-                  <div class="tech-tags">
-                    <p class="tech-tag figma">Figma</p>
+                <div
+                  class="project-item user-interface-design active"
+                  data-project-id="oildrop"
+                >
+                  <div class="project-img-cont">
+                    <img
+                      src="assets/images/project-previews/oildrop.png"
+                      alt="oildrop"
+                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="project-description-cont">
+                    <h3>Oildrop</h3>
+                    <p>User Interface Design</p>
+                    <div class="tech-tags">
+                      <p class="tech-tag figma">Figma</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!--
-                - #ITEM -> YSP
-              -->
 
-              <!--
-                - #ITEM -> clouds
-              -->
-
-              <!--
+                <!--
                 - #ITEM -> Avalon
               -->
 
-              <!--
+                <!--
                 - #ITEM -> LnT FP 24
               -->
 
-              <!--
+                <!--
                 - #ITEM -> Tic Tac Toe
               -->
 
-              <!--
+                <!--
                 - #ITEM -> Pw hasher
               -->
 
+                <!--
+                - #ITEM -> YSP
+              -->
+
+                <!--
+                - #ITEM -> clouds
+              --></div>
             </div>
-            <!--
-             - #MODAL
-            -->
-            <div id="portfolioModal" class="modal">
-              <div class="modal-content">
-                <div class="modal-image-container">
-                  <img id="modalImage" src="" alt="Project Preview">
-                </div>
-                <div class="modal-description-container">
+          </div>
+          <!--
+          - #MODAL
+        -->
+          <div id="projectModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-image-container">
+                <img id="modalImage" src="" alt="Project Preview" />
+              </div>
+              <div class="modal-description-container">
+                <div class="modal-short-description">
                   <h2 id="modalTitle"></h2>
-                  <hr id="modal-divider">
+                  <div id="modalTechTags" class="tech-tags"></div>
+                  <hr id="modal-divider" />
                   <p id="modalDescription"></p>
                   <a id="modalLink" href="#" target="_blank">Open</a>
                 </div>
+                <div id="longDescription" class="modal-long-description"></div>
+                <div id="previewImages" class="preview-images-container"></div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!--
+        </section>
+        <!--
         - #CONTACT
       -->
-      <section id="contact">
-        <div class="contact-cont">
-          <div class="section-header">
-            <h1>Contact Me</h1>
-            <hr>
-          </div>
-          <div class="contacts">
-            <p>
-              You can contact me via email, WhatsApp, Discord, Instagram, or
-              LinkedIn. I usually respond within a day.
-            </p>
-            <div class="contact-info">
-              <a class="contact" href="mailto:r.ariel.timothy@gmail.com">
-                <div class="contact-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-                </div>
-                <div class="contact-type">
-                  <p>Email</p>
-                </div>
-                <div class="contact-text">
-                  <p>r.ariel.timothy@gmail.com</p>
-                </div>
-              </a>
-              <a class="contact" href="https://instagram.com/rainer_ariel/" target="_blank">
-                <div class="contact-icon">
-                  <svg width="70px" height="70px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                </div>
-                <div class="contact-type">
-                  <p>Instagram</p>
-                </div>
-                <div class="contact-text">
-                  <p>rainer_ariel</p>
-                </div>
-              </a>
-              <a class="contact" href="https://discordapp.com/users/327090068235747339" target="_blank">
-                <div class="contact-icon">
-                  <svg width="70px" height="70px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                    <g>
-                      <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="contact-type">
-                  <p>Discord</p>
-                </div>
-                <div class="contact-text">
-                  <p>ner_x</p>
-                </div>
-              </a>
+        <section id="contact">
+          <div class="contact-cont">
+            <div class="section-header">
+              <h1>Contact Me</h1>
+              <hr />
+            </div>
+            <div class="contacts">
+              <p>
+                You can contact me via email, WhatsApp, Discord, Instagram, or
+                LinkedIn. I usually respond within a day.
+              </p>
+              <div class="contact-info">
+                <a class="contact" href="mailto:r.ariel.timothy@gmail.com">
+                  <div class="contact-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="70px"
+                      viewBox="0 -960 960 960"
+                      width="70px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="contact-type">
+                    <p>Email</p>
+                  </div>
+                  <div class="contact-text">
+                    <p>r.ariel.timothy@gmail.com</p>
+                  </div>
+                </a>
+                <a
+                  class="contact"
+                  href="https://instagram.com/rainer_ariel/"
+                  target="_blank"
+                >
+                  <div class="contact-icon">
+                    <svg
+                      width="70px"
+                      height="70px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="contact-type">
+                    <p>Instagram</p>
+                  </div>
+                  <div class="contact-text">
+                    <p>rainer_ariel</p>
+                  </div>
+                </a>
+                <a
+                  class="contact"
+                  href="https://discordapp.com/users/327090068235747339"
+                  target="_blank"
+                >
+                  <div class="contact-icon">
+                    <svg
+                      width="70px"
+                      height="70px"
+                      viewBox="0 -28.5 256 256"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      preserveAspectRatio="xMidYMid"
+                    >
+                      <g>
+                        <path
+                          d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="contact-type">
+                    <p>Discord</p>
+                  </div>
+                  <div class="contact-text">
+                    <p>ner_x</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.478949799!2d106.829518!3d-6.2297465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1729911743659!5m2!1sen!2sid"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-  </main>
-  <!--
+        </section>
+      </div>
+    </main>
+    <!--
     - #JS-LINK
   -->
-  <script src="scripts/script.js"></script>
-  <script src="scripts/ProjectHandler.js"></script>
-</body>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/ProjectHandler.js"></script>
+  </body>
 </html>

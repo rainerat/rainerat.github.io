@@ -1,19 +1,55 @@
 .filters {
   margin-top: 0.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.filter-buttons {
   display: flex;
   gap: 1.5rem;
-  margin-bottom: 1.3rem;
+}
+
+.filter-select {
+  display: none;
+}
+
+.filter-select #filter-dropdown {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background: var(--bg-black);
+  color: var(--font-white-2);
+  border: 1px solid var(--border-grey);
+  border-radius: 0.6rem;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+}
+
+.select-item button {
+  background: var(--eerie-black-2);
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  text-transform: capitalize;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.select-item button:hover {
+  --eerie-black-2: hsl(240, 2%, 20%);
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 10px;
 }
 
 .filter-btn {
   cursor: pointer;
   border: none;
   background-color: transparent;
-  color: var(--font-white-1);
-  font-size: var(--fs-normal);
-  font-weight: var(--fw-normal);
-  font-family: Poppins, sans-serif;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .filter-btn:hover {
@@ -48,10 +84,7 @@
   position: absolute;
   overflow: hidden;
   transform: scale(0.8);
-  transition:
-          transform 0.3s ease,
-          height 0.3s ease,
-          background 0.1s ease;
+  transition: transform 0.3s ease, height 0.3s ease, background 0.1s ease;
 }
 
 .project-item.active {
@@ -87,9 +120,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition:
-          transform .3s ease,
-          filter .3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .project-img-cont svg {
@@ -104,7 +135,7 @@
   opacity: 0;
   fill: var(--accent-yellow);
   background: var(--bg-grey-1);
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .project-description-cont {
@@ -114,22 +145,33 @@
   padding-top: 0.65rem;
 }
 
-.project-description-cont .tech-tags {
+.project-description-cont h3 {
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-normal);
+}
+
+.project-description-cont > p {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-normal);
+  color: var(--font-white-3);
+}
+
+.tech-tags {
   margin-top: 0.25rem;
   display: flex;
   gap: 0.5rem;
 }
 
-.project-description-cont .tech-tag {
+.tech-tag {
   background: var(--hr-grey);
   padding: 0.125rem 0.5rem;
   border-radius: 0.438rem;
   color: var(--font-white-1);
   font-size: var(--fs-smaller);
-  transition: filter .15s ease;
+  transition: filter 0.15s ease;
 }
 
-.project-description-cont .tech-tag:hover {
+.tech-tag:hover {
   filter: brightness(0.9);
 }
 
@@ -153,18 +195,10 @@
   background: rgba(119, 74, 234, 0.6);
 }
 
-.project-description-cont h3 {
-  font-size: var(--fs-normal);
-  font-weight: var(--fw-normal);
-}
+/*
+ * MODAL
+ */
 
-.project-description-cont p {
-  font-size: var(--fs-small);
-  font-weight: var(--fw-normal);
-  color: var(--font-white-3);
-}
-
-/* MODAL */
 .modal {
   display: none;
   position: fixed;
@@ -208,8 +242,24 @@
   padding: 2rem 8rem;
 }
 
+.modal-short-description {
+  position: relative;
+  background: rgb(57, 62, 70);
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 0.5rem;
+  z-index: 1111;
+}
+
 #modalTitle {
   font-size: var(--fs-xxlarge);
+}
+
+#modalTechTags {
+  margin-bottom: 1rem;
+}
+
+.modal-short-description .tech-tag {
+  font-size: var(--fs-normal);
 }
 
 #modal-divider {
@@ -222,7 +272,8 @@
 
 #modalDescription {
   font-size: var(--fs-medium);
-  margin-bottom: 2rem;
+  color: var(--font-white-2);
+  margin-bottom: 1rem;
 }
 
 #modalLink {
@@ -237,4 +288,34 @@
 
 #modalLink:hover {
   filter: brightness(0.8);
+}
+
+.modal-long-description > div:first-child {
+  margin-top: 2rem;
+}
+
+.modal-long-description > div {
+  margin-top: 1rem;
+}
+
+.modal-long-description > div h3 {
+  font-size: var(--fs-xlarge);
+  font-weight: var(--fw-semi-bold);
+}
+
+.modal-long-description > div p {
+  margin-top: 0.6rem;
+}
+
+.preview-images-container {
+  margin-top: 3rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preview-images-container img {
+  width: 90%;
 }

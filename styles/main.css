@@ -38,6 +38,10 @@ body {
   display: none;
 }
 
+.show-contact-link svg {
+  display: none;
+}
+
 .side-header {
   display: flex;
   flex-direction: column;
@@ -102,11 +106,11 @@ body {
   width: 100%;
 }
 
-.info-cont  {
-  width: 100%;
+.info-cont {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  width: 100%;
 }
 
 #email,
@@ -138,7 +142,7 @@ body {
 
 .icon svg {
   fill: var(--font-white-2);
-  transition: fill .2s ease;
+  transition: fill 0.2s ease;
 }
 
 .icon::before {
@@ -164,6 +168,10 @@ body {
 
 .text p:not(.info-header) {
   color: var(--font-white-1);
+}
+
+.text address {
+  font-style: normal;
 }
 
 .socials {
@@ -194,7 +202,6 @@ body {
   min-width: 60rem;
   width: 60rem;
   min-height: 48.397rem;
-  /*max-height: 48.397rem;*/
   padding: 1.8rem;
   border-radius: 1.625rem;
   background: var(--bg-grey-1);
@@ -224,7 +231,7 @@ body {
   color: var(--font-white-2);
   font-size: var(--fs-small);
   font-weight: var(--fw-medium);
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
@@ -261,15 +268,22 @@ body {
   display: none;
 }
 
-
 /**
  * MEDIA QUERIES
  */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1350px) {
+  /** 
+   * GLOBAL
+   */
+
   .inner-cont {
     flex-direction: column;
     align-items: center;
   }
+
+  /** 
+   * SIDEBAR
+   */
 
   .sidebar {
     position: relative;
@@ -284,7 +298,7 @@ body {
     justify-content: flex-start;
     overflow: clip;
     gap: 0;
-    transition: height .3s linear, width .35s ease-in-out;
+    transition: height 0.3s linear, width 0.35s ease-in-out;
   }
 
   .sidebar.active {
@@ -305,9 +319,9 @@ body {
     font-weight: var(--fw-medium);
     border-left: 1px solid var(--border-grey);
     border-bottom: 1px solid var(--border-grey);
-    border-radius: 0  1.625rem;
+    border-radius: 0 1.625rem;
     padding: 0.7rem 1.3rem;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
   }
 
   .show-contact-link:hover {
@@ -336,7 +350,7 @@ body {
     margin-top: 1.8rem;
     opacity: 0;
     width: 100%;
-    transition: opacity .4s linear;
+    transition: opacity 0.4s linear;
   }
 
   .sidebar.active .side-content {
@@ -344,6 +358,8 @@ body {
   }
 
   .info-cont {
+    width: 100%;
+    gap: 1.6rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -357,18 +373,52 @@ body {
     max-height: unset;
     height: auto;
   }
+
+  .modal-description-container {
+    padding: 2rem 4rem;
+  }
+
+  .preview-images-container img {
+    width: 95%;
+  }
 }
 
-@media screen and (max-width: 973px) {
+@media screen and (max-width: 1024px) {
   .sidebar {
-    min-width: 40rem;
-    width: 40rem;
-    transition: height .35s linear, width .3s ease-in-out;
+    min-width: 45rem;
+    width: 45rem;
+    transition: height 0.35s linear, width 0.3s ease-in-out;
   }
 
   .main-content {
+    position: unset;
     min-width: unset;
-    width: 40rem;
+    width: 45rem;
+  }
+
+  .navbar {
+    top: unset;
+    right: unset;
+    padding: unset;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 4.25rem;
+    border-radius: 1rem 1rem 0 0;
+    background: rgba(65, 70, 79, 0.7);
+    backdrop-filter: blur(5px);
+  }
+
+  .nav-link {
+    display: block;
+    width: 7rem;
+    height: 100%;
+    text-align: center;
+    line-height: 4.25rem;
   }
 
   .cards {
@@ -377,5 +427,195 @@ body {
 
   .project-items {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .modal-description-container {
+    padding: 2rem 2rem;
+  }
+
+  .preview-images-container img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    min-width: 35rem;
+    width: 35rem;
+    transition: height 0.35s linear, width 0.3s ease-in-out;
+  }
+
+  .sidebar.active {
+    height: 32.724rem;
+    max-height: 32.724rem;
+  }
+
+  .info-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .main-content {
+    position: unset;
+    min-width: unset;
+    width: 35rem;
+  }
+
+  /** 
+   * PROJECT
+   */
+
+  .filter-buttons {
+    display: none;
+  }
+
+  .filter-select {
+    display: block;
+  }
+}
+
+/* phone */
+@media (max-width: 580px) {
+  /**
+   * TYPOGRAPHY
+   */
+
+  html {
+    font-size: 14px;
+  }
+
+  :root {
+    --fs-smaller: 0.75rem;
+    --fs-small: 0.75rem;
+    --fs-normal: 0.875rem;
+    --fs-medium: 1rem;
+    --fs-large: 1.1rem;
+    --fs-xlarge: 1.3rem;
+    --fs-xxlarge: 3rem;
+  }
+
+  /**
+   * GLOBAL
+   */
+
+  .inner-cont {
+    margin: 1rem;
+    gap: 1rem;
+  }
+
+  /**
+   * SIDEBAR
+   */
+
+  .sidebar {
+    padding: 1.2rem;
+    width: 100%;
+    min-width: 20.5rem;
+    min-height: 8.5rem;
+    height: 8.5rem;
+    transition: height 0.35s linear, width 0.3s ease-in-out;
+  }
+
+  .my-name h2 {
+    line-height: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .sidebar.active {
+    width: 100%;
+    height: 28.523rem;
+    max-height: 28.523rem;
+  }
+
+  .sidebar .img-cont {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .side-desc-cont {
+    gap: unset;
+  }
+
+  .show-contact-link {
+    width: auto;
+    padding: 0.1rem 0.6rem;
+  }
+
+  .show-contact-link span {
+    display: none;
+  }
+
+  .show-contact-link svg {
+    display: inline-block;
+    transform: rotate(180deg);
+  }
+
+  .show-contact-link.active svg {
+    fill: var(--accent-yellow);
+  }
+
+  /**
+   * MAIN
+   */
+
+  .main-content {
+    min-width: 20.5rem;
+    width: 100%;
+  }
+
+  .nav-links {
+    gap: 0;
+  }
+
+  .nav-link {
+    width: 6rem;
+    height: 100%;
+    text-align: center;
+    line-height: 4.25rem;
+  }
+
+  /**
+   * ABOUT ME
+   */
+
+  .cards {
+    gap: 0.5rem;
+  }
+
+  .about-techs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 0.2rem;
+    flex-wrap: wrap;
+  }
+
+  .tech {
+    justify-self: center;
+  }
+
+  /**
+   * CONTACT
+   */
+
+  /* .contact-info {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+  } */
+}
+
+@media (max-width: 410px) {
+  :root {
+    --fs-xlarge: 1.2rem;
+  }
+
+  .my-name h2 {
+    line-height: 1.4rem;
+  }
+
+  .tech {
+    width: 8rem;
+    height: 9rem;
   }
 }
